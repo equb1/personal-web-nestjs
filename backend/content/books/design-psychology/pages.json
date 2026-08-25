@@ -1,0 +1,46 @@
+[
+  {
+    "pageNumber": 1,
+    "title": "封面",
+    "type": "cover",
+    "image": "/static/books/design-psychology/cover.svg"
+  },
+  {
+    "pageNumber": 2,
+    "title": "版权与元数据",
+    "chapter": "Front Matter",
+    "type": "copyright",
+    "format": "epub",
+    "content": "# 设计心理学\n\n**著者**：唐·诺曼\n\n> 设计的第一原则：让用户明白「现在发生了什么、接下来能做什么」。"
+  },
+  {
+    "pageNumber": 3,
+    "title": "第一章：预设与心理模型",
+    "chapter": "Chapter 1",
+    "type": "epub-section",
+    "format": "epub",
+    "content": "### 1.1 心理模型\n\n用户根据过往经验在大脑中建立「系统如何运作」的模型。设计应尽量匹配这种模型，否则用户会困惑。\n\n- 可见性：功能在需要时可见\n- 映射：控制与效果一一对应\n- 反馈：操作后立即给出回应"
+  },
+  {
+    "pageNumber": 4,
+    "title": "第二章：约束与示能",
+    "chapter": "Chapter 2",
+    "type": "epub-section",
+    "format": "epub",
+    "content": "### 2.1 示能（Affordance）\n\n物体的物理属性暗示其可用方式：按钮像可点击的，把手像可握住的。好的设计让「怎么做」不言自明。"
+  },
+  {
+    "pageNumber": 5,
+    "title": "深度读书笔记",
+    "chapter": "Engineer Notes",
+    "type": "notes",
+    "format": "markdown",
+    "content": "## 关于本书的核心沉淀\n\n1. **以人为本**：设计失败时，先怪设计，不要怪用户。\n2. **反馈即呼吸**：任何操作都应有即时、明确的反馈。\n3. **约束即引导**：用约束代替说明文档，让错误难以发生。\n\n> 对前端而言：表单校验、加载态、空态都是「可见性 + 反馈」的落地。"
+  },
+  {
+    "pageNumber": 6,
+    "title": "封底",
+    "type": "back-cover",
+    "content": "### 结束语\n\n**ISBN**：978-0-465-05065-9\n**支持格式**：Markdown / PDF"
+  }
+]

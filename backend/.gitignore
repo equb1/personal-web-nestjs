@@ -1,0 +1,22 @@
+# dependencies
+/node_modules
+
+# build output
+/dist
+
+# env
+.env
+
+# SQLite database (persistent volume)
+/data
+
+# static media too large to commit
+/static/*.mp4
+/static/**/*.mp4
+
+# generated openapi snapshot
+/openapi.json
+
+# logs
+*.log
+npm-debug.log*

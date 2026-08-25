@@ -1,0 +1,25 @@
+{
+  "timeline": [
+    {
+      "year": "2026",
+      "title": "前端工程师",
+      "companyOrContext": "某公司",
+      "description": "负责中后台系统与可视化大屏，专注性能优化与工程化建设。",
+      "icon": "Briefcase"
+    },
+    {
+      "year": "2025",
+      "title": "全栈练习生",
+      "companyOrContext": "独立开发",
+      "description": "从 React 组件库到 Node 服务端，完成了个人博客的第一版闭环。",
+      "icon": "Rocket"
+    },
+    {
+      "year": "2024",
+      "title": "前端入门",
+      "companyOrContext": "自学之路",
+      "description": "开始学习 HTML/CSS/JavaScript，写出了第一个网页。",
+      "icon": "BookOpen"
+    }
+  ]
+}

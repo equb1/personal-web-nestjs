@@ -1,0 +1,22 @@
+{
+  "projects": [
+    {
+      "id": "personal-web",
+      "title": "个人网站",
+      "description": "3D 书籍动画 + 代码沙箱博客，前后端分离：React 前端 + NestJS 后端（内容即文件）。",
+      "tags": ["React", "NestJS", "TypeScript"],
+      "githubUrl": "https://github.com/example/personal-web",
+      "icon": "Code",
+      "stars": 12
+    },
+    {
+      "id": "cli-tool",
+      "title": "Markdown 文档校验 CLI",
+      "description": "命令行工具，扫描仓库内 Markdown 的 frontmatter 完整性、坏链接与重复锚点。",
+      "tags": ["Node.js", "CLI"],
+      "githubUrl": "https://github.com/example/md-lint-cli",
+      "icon": "Terminal",
+      "stars": 34
+    }
+  ]
+}

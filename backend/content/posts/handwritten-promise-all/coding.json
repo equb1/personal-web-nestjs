@@ -1,0 +1,55 @@
+{
+  "id": "cc-promise-all",
+  "title": "手写实现 myPromiseAll 函数",
+  "difficulty": "medium",
+  "description": "编写一个 `myPromiseAll(promises)` 函数，模拟原生 `Promise.all` 的行为：\n\n- 接受任意 Iterable。\n- 空数组立即 resolve 空数组。\n- 所有结果按输入顺序返回。\n- 任一 reject 则整体 reject。",
+  "starterCode": "function myPromiseAll(promises) {\n  return new Promise((resolve, reject) => {\n    if (!promises || typeof promises[Symbol.iterator] !== \"function\") {\n      return reject(new TypeError(\"promises must be iterable\"));\n    }\n    const promiseArr = Array.from(promises);\n    if (promiseArr.length === 0) return resolve([]);\n    const results = [];\n    let count = 0;\n    promiseArr.forEach((p, i) => {\n      Promise.resolve(p).then(\n        (value) => {\n          results[i] = value;\n          count += 1;\n          if (count === promiseArr.length) resolve(results);\n        },\n        reject\n      );\n    });\n  });\n}",
+  "solutionCode": "function myPromiseAll(promises) {\n  return new Promise((resolve, reject) => {\n    if (!promises || typeof promises[Symbol.iterator] !== \"function\") {\n      return reject(new TypeError(\"promises must be iterable\"));\n    }\n    const promiseArr = Array.from(promises);\n    if (promiseArr.length === 0) return resolve([]);\n    const results = [];\n    let count = 0;\n    promiseArr.forEach((p, i) => {\n      Promise.resolve(p).then(\n        (value) => {\n          results[i] = value;\n          count += 1;\n          if (count === promiseArr.length) resolve(results);\n        },\n        reject\n      );\n    });\n  });\n}",
+  "languageTemplates": [
+    {
+      "language": "javascript",
+      "label": "JavaScript (ES2024)",
+      "extension": "js",
+      "starterCode": "function myPromiseAll(promises) { return new Promise((resolve, reject) => { /* TODO */ }); }",
+      "solutionCode": "function myPromiseAll(promises) { return new Promise((resolve, reject) => { const arr = Array.from(promises); if (arr.length === 0) return resolve([]); const out = []; let n = 0; arr.forEach((p, i) => Promise.resolve(p).then(v => { out[i] = v; if (++n === arr.length) resolve(out); }, reject)); }); }"
+    },
+    {
+      "language": "typescript",
+      "label": "TypeScript (v5.7)",
+      "extension": "ts",
+      "starterCode": "function myPromiseAll<T extends readonly unknown[] | []>(promises: T): Promise<{ -readonly [P in keyof T]: Awaited<T[P]> }> {\n  return new Promise((resolve, reject) => { /* TODO */ });\n}",
+      "solutionCode": "function myPromiseAll<T extends readonly unknown[] | []>(promises: T): Promise<{ -readonly [P in keyof T]: Awaited<T[P]> }> {\n  return new Promise((resolve, reject) => {\n    const arr = Array.from(promises);\n    if (arr.length === 0) return resolve([] as any);\n    const out: unknown[] = [];\n    let n = 0;\n    arr.forEach((p, i) => Promise.resolve(p).then(v => { out[i] = v; if (++n === arr.length) resolve(out as any); }, reject));\n  });\n}"
+    },
+    {
+      "language": "python",
+      "label": "Python (asyncio.gather)",
+      "extension": "py",
+      "starterCode": "import asyncio\n\nasync def my_gather(*aws):\n    results = [None] * len(aws)\n    # TODO: 使用 asyncio 收集所有任务结果\n    return results",
+      "solutionCode": "import asyncio\n\nasync def my_gather(*aws):\n    results = [None] * len(aws)\n    pending = list(aws)\n    for i, aw in enumerate(aws):\n        results[i] = await aw\n    return results"
+    }
+  ],
+  "hints": [
+    "使用 Array.from(promises) 处理所有 Iterable 输入。",
+    "用 count 计数器统计完成数量，count === length 时 resolve(results)。"
+  ],
+  "testCases": [
+    {
+      "id": "t1",
+      "name": "处理普通值与已解决的 Promise 并发",
+      "code": "await myPromiseAll([1, Promise.resolve(2), 3])",
+      "expectedOutput": "[1, 2, 3]"
+    },
+    {
+      "id": "t2",
+      "name": "空数组应立即 resolve 空数组",
+      "code": "await myPromiseAll([])",
+      "expectedOutput": "[]"
+    },
+    {
+      "id": "t3",
+      "name": "任一 reject 则整体 reject",
+      "code": "await myPromiseAll([1, Promise.reject(new Error('boom'))]).catch(e => 'rejected: ' + e.message)",
+      "expectedOutput": "rejected: boom"
+    }
+  ]
+}
