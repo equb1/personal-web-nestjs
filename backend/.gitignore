@@ -13,10 +13,12 @@
 # static media too large to commit
 /static/*.mp4
 /static/**/*.mp4
-
-# generated openapi snapshot
-/openapi.json
+/static/**/*.epub
 
 # logs
 *.log
 npm-debug.log*
+
+# local runtime artifacts
+server.pid
+server.err.log

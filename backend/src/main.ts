@@ -11,7 +11,16 @@ async function bootstrap() {
   const app = await NestFactory.create(AppModule);
 
   app.setGlobalPrefix('api');
-  app.enableCors();
+
+  // 跨域：CORS_ORIGIN 为空则关闭（生产同源反代推荐）；逗号分隔白名单时开启
+  const corsOrigin = process.env.CORS_ORIGIN?.trim();
+  if (corsOrigin) {
+    const origins = corsOrigin
+      .split(',')
+      .map((o) => o.trim())
+      .filter(Boolean);
+    app.enableCors({ origin: origins });
+  }
 
   app.useGlobalPipes(new ValidationPipe({ whitelist: true, transform: true }));
   app.useGlobalInterceptors(new TransformInterceptor());

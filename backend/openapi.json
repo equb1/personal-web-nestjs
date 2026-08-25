@@ -1,0 +1,1394 @@
+{
+  "openapi": "3.0.0",
+  "paths": {
+    "/api/posts": {
+      "get": {
+        "description": "支持 ?page&pageSize 分页（此时 data 为 { list,total,page,pageSize }）；默认返回数组。支持 type/category/keyword 过滤。列表精简省略 content/quizzes/codingChallenge。",
+        "operationId": "PostsController_findAll",
+        "parameters": [
+          {
+            "name": "page",
+            "required": false,
+            "in": "query",
+            "description": "页码，从 1 开始",
+            "schema": {
+              "minimum": 1,
+              "example": 1,
+              "type": "number"
+            }
+          },
+          {
+            "name": "pageSize",
+            "required": false,
+            "in": "query",
+            "description": "每页数量",
+            "schema": {
+              "minimum": 1,
+              "maximum": 100,
+              "example": 20,
+              "type": "number"
+            }
+          },
+          {
+            "name": "type",
+            "required": false,
+            "in": "query",
+            "description": "按文章类型过滤",
+            "schema": {
+              "type": "string",
+              "enum": [
+                "article",
+                "quiz",
+                "coding"
+              ]
+            }
+          },
+          {
+            "name": "category",
+            "required": false,
+            "in": "query",
+            "description": "按分类精确过滤",
+            "schema": {
+              "example": "手撕代码",
+              "type": "string"
+            }
+          },
+          {
+            "name": "keyword",
+            "required": false,
+            "in": "query",
+            "description": "关键词模糊匹配 title/summary/tags/content",
+            "schema": {
+              "example": "Promise",
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "统一信封 { code:0, message:\"ok\", data }；data 为 PostListResultDto（分页时）或 PostDto[]（未分页时）",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PostListResultDto"
+                }
+              }
+            }
+          }
+        },
+        "summary": "学习文章列表",
+        "tags": [
+          "posts"
+        ]
+      }
+    },
+    "/api/posts/{id}": {
+      "get": {
+        "description": "返回单个 Post（含完整 quizzes / codingChallenge）",
+        "operationId": "PostsController_findOne",
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "description": "文章 ID",
+            "schema": {
+              "example": "react-hooks-study",
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "统一信封 { code:0, message:\"ok\", data }；data 为 PostDto",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PostDto"
+                }
+              }
+            }
+          }
+        },
+        "summary": "文章详情",
+        "tags": [
+          "posts"
+        ]
+      }
+    },
+    "/api/stats/views": {
+      "post": {
+        "operationId": "StatsController_incrementViews",
+        "parameters": [],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/StatsActionDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "返回该内容累计增量",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PostStats"
+                }
+              }
+            }
+          }
+        },
+        "summary": "浏览量 +1",
+        "tags": [
+          "stats"
+        ]
+      }
+    },
+    "/api/stats/likes": {
+      "post": {
+        "operationId": "StatsController_incrementLikes",
+        "parameters": [],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/StatsActionDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "返回该内容累计增量",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PostStats"
+                }
+              }
+            }
+          }
+        },
+        "summary": "点赞 +1",
+        "tags": [
+          "stats"
+        ]
+      }
+    },
+    "/api/videos": {
+      "get": {
+        "description": "支持 ?page&pageSize 分页（data 为 { list,total,page,pageSize }）；默认返回数组。支持 category/keyword 过滤。",
+        "operationId": "VideosController_findAll",
+        "parameters": [
+          {
+            "name": "page",
+            "required": false,
+            "in": "query",
+            "description": "页码，从 1 开始",
+            "schema": {
+              "minimum": 1,
+              "example": 1,
+              "type": "number"
+            }
+          },
+          {
+            "name": "pageSize",
+            "required": false,
+            "in": "query",
+            "description": "每页数量",
+            "schema": {
+              "minimum": 1,
+              "maximum": 100,
+              "example": 20,
+              "type": "number"
+            }
+          },
+          {
+            "name": "category",
+            "required": false,
+            "in": "query",
+            "description": "按分类过滤",
+            "schema": {
+              "type": "string",
+              "enum": [
+                "vlog",
+                "tech",
+                "music",
+                "gaming"
+              ]
+            }
+          },
+          {
+            "name": "keyword",
+            "required": false,
+            "in": "query",
+            "description": "关键词模糊匹配 title/description",
+            "schema": {
+              "example": "航拍",
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "统一信封 { code:0, message:\"ok\", data }；data 为 VideoListResultDto（分页时）或 VideoDto[]（未分页时）",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/VideoListResultDto"
+                }
+              }
+            }
+          }
+        },
+        "summary": "兴趣视频列表",
+        "tags": [
+          "videos"
+        ]
+      }
+    },
+    "/api/videos/{id}": {
+      "get": {
+        "description": "返回单个 HobbyVideo",
+        "operationId": "VideosController_findOne",
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "description": "视频 ID",
+            "schema": {
+              "example": "v1",
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "统一信封 { code:0, message:\"ok\", data }；data 为 VideoDto",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/VideoDto"
+                }
+              }
+            }
+          }
+        },
+        "summary": "视频详情",
+        "tags": [
+          "videos"
+        ]
+      }
+    },
+    "/api/books": {
+      "get": {
+        "description": "支持 ?page&pageSize 分页（data 为 { list,total,page,pageSize }）；默认返回数组。支持 status/category/keyword 过滤。",
+        "operationId": "BooksController_findAll",
+        "parameters": [
+          {
+            "name": "page",
+            "required": false,
+            "in": "query",
+            "description": "页码，从 1 开始",
+            "schema": {
+              "minimum": 1,
+              "example": 1,
+              "type": "number"
+            }
+          },
+          {
+            "name": "pageSize",
+            "required": false,
+            "in": "query",
+            "description": "每页数量",
+            "schema": {
+              "minimum": 1,
+              "maximum": 100,
+              "example": 20,
+              "type": "number"
+            }
+          },
+          {
+            "name": "status",
+            "required": false,
+            "in": "query",
+            "description": "按阅读状态过滤",
+            "schema": {
+              "type": "string",
+              "enum": [
+                "reading",
+                "completed",
+                "want-to-read"
+              ]
+            }
+          },
+          {
+            "name": "category",
+            "required": false,
+            "in": "query",
+            "description": "按分类过滤",
+            "schema": {
+              "example": "计算机",
+              "type": "string"
+            }
+          },
+          {
+            "name": "keyword",
+            "required": false,
+            "in": "query",
+            "description": "关键词模糊匹配 title/author/tags",
+            "schema": {
+              "example": "CSS",
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "统一信封 { code:0, message:\"ok\", data }；data 为 BookListResultDto（分页时）或 BookDto[]（未分页时）",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/BookListResultDto"
+                }
+              }
+            }
+          }
+        },
+        "summary": "书籍列表",
+        "tags": [
+          "books"
+        ]
+      }
+    },
+    "/api/books/{id}": {
+      "get": {
+        "description": "返回单个 Book（含 bookPages）",
+        "operationId": "BooksController_findOne",
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "description": "书籍 ID",
+            "schema": {
+              "example": "b-101",
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "统一信封 { code:0, message:\"ok\", data }；data 为 BookDto",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/BookDto"
+                }
+              }
+            }
+          }
+        },
+        "summary": "书籍详情",
+        "tags": [
+          "books"
+        ]
+      }
+    },
+    "/api/projects": {
+      "get": {
+        "description": "返回 ProjectDto[]（只读，来源于 content/projects.json）",
+        "operationId": "ProjectsController_findAll",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "统一信封 { code:0, message:\"ok\", data }；data 为 ProjectDto[]",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ProjectDto"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "summary": "项目展示列表",
+        "tags": [
+          "projects"
+        ]
+      }
+    },
+    "/api/timeline": {
+      "get": {
+        "description": "返回 TimelineItemDto[]（只读，来源于 content/timeline.json）",
+        "operationId": "TimelineController_findAll",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "统一信封 { code:0, message:\"ok\", data }；data 为 TimelineItemDto[]",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/TimelineItemDto"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "summary": "时间线列表",
+        "tags": [
+          "timeline"
+        ]
+      }
+    },
+    "/api/comments": {
+      "get": {
+        "description": "支持 ?page&pageSize 分页（data 为 { list,total,page,pageSize }）；默认返回数组（按最新在前）",
+        "operationId": "CommentsController_findAll",
+        "parameters": [
+          {
+            "name": "page",
+            "required": false,
+            "in": "query",
+            "description": "页码，从 1 开始",
+            "schema": {
+              "minimum": 1,
+              "example": 1,
+              "type": "number"
+            }
+          },
+          {
+            "name": "pageSize",
+            "required": false,
+            "in": "query",
+            "description": "每页数量",
+            "schema": {
+              "minimum": 1,
+              "maximum": 100,
+              "example": 20,
+              "type": "number"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "统一信封 { code:0, message:\"ok\", data }；data 为 Comment[] 或分页结构",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Comment"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "summary": "留言列表",
+        "tags": [
+          "comments"
+        ]
+      },
+      "post": {
+        "description": "DTO 校验：author 1-50 字符，content 1-500 字符，avatar 可选且为合法 URL",
+        "operationId": "CommentsController_create",
+        "parameters": [],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateCommentDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "统一信封 { code:0, message:\"ok\", data }；data 为创建后的 Comment",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Comment"
+                }
+              }
+            }
+          }
+        },
+        "summary": "提交留言",
+        "tags": [
+          "comments"
+        ]
+      }
+    }
+  },
+  "info": {
+    "title": "个人博客 API",
+    "description": "覆盖学习文章(posts) / 兴趣视频(videos) / 书籍(books) / 项目 / 时间线 / 评论 / 统计，统一响应 { code, message, data }",
+    "version": "1.0",
+    "contact": {}
+  },
+  "tags": [
+    {
+      "name": "posts",
+      "description": "学习文章（article/quiz/coding）"
+    },
+    {
+      "name": "videos",
+      "description": "兴趣视频"
+    },
+    {
+      "name": "books",
+      "description": "书籍（3D 阅读器）"
+    },
+    {
+      "name": "projects",
+      "description": "项目展示"
+    },
+    {
+      "name": "timeline",
+      "description": "时间线"
+    },
+    {
+      "name": "comments",
+      "description": "留言"
+    },
+    {
+      "name": "stats",
+      "description": "浏览量 / 点赞统计"
+    }
+  ],
+  "servers": [
+    {
+      "url": "http://localhost:3000"
+    }
+  ],
+  "components": {
+    "schemas": {
+      "QuizOptionDto": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "选项 ID（如 a/b/c/d）",
+            "example": "a"
+          },
+          "text": {
+            "type": "string",
+            "description": "选项文本"
+          },
+          "isCorrect": {
+            "type": "boolean",
+            "description": "是否为正确答案（每题有且仅有 1 个为 true）"
+          }
+        },
+        "required": [
+          "id",
+          "text",
+          "isCorrect"
+        ]
+      },
+      "QuizItemDto": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "题目 ID（同一文章内唯一）",
+            "example": "q1"
+          },
+          "question": {
+            "type": "string",
+            "description": "题干（Markdown，可含代码块）"
+          },
+          "options": {
+            "description": "选项数组",
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/QuizOptionDto"
+            }
+          },
+          "explanation": {
+            "type": "string",
+            "description": "考点剖析解析（Markdown）"
+          },
+          "difficulty": {
+            "type": "string",
+            "description": "难度",
+            "enum": [
+              "easy",
+              "medium",
+              "hard"
+            ]
+          },
+          "tags": {
+            "description": "题目标签",
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "required": [
+          "id",
+          "question",
+          "options",
+          "explanation",
+          "difficulty"
+        ]
+      },
+      "TestCaseDto": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "用例 ID",
+            "example": "t1"
+          },
+          "name": {
+            "type": "string",
+            "description": "用例名称/描述"
+          },
+          "code": {
+            "type": "string",
+            "description": "测试执行代码片段"
+          },
+          "expectedOutput": {
+            "type": "string",
+            "description": "期望输出（字符串化比较）"
+          }
+        },
+        "required": [
+          "id",
+          "name",
+          "code",
+          "expectedOutput"
+        ]
+      },
+      "LanguageTemplateDto": {
+        "type": "object",
+        "properties": {
+          "language": {
+            "type": "string",
+            "description": "语言标识",
+            "example": "javascript"
+          },
+          "label": {
+            "type": "string",
+            "description": "界面显示名",
+            "example": "TypeScript (v5.7)"
+          },
+          "extension": {
+            "type": "string",
+            "description": "文件扩展名",
+            "example": "js"
+          },
+          "starterCode": {
+            "type": "string",
+            "description": "该语言的初始代码"
+          },
+          "solutionCode": {
+            "type": "string",
+            "description": "该语言的参考答案"
+          }
+        },
+        "required": [
+          "language",
+          "label",
+          "extension",
+          "starterCode",
+          "solutionCode"
+        ]
+      },
+      "CodingChallengeDto": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "挑战 ID（唯一）",
+            "example": "cc-promise-all"
+          },
+          "title": {
+            "type": "string",
+            "description": "挑战标题"
+          },
+          "difficulty": {
+            "type": "string",
+            "description": "难度",
+            "enum": [
+              "easy",
+              "medium",
+              "hard"
+            ]
+          },
+          "description": {
+            "type": "string",
+            "description": "题目描述（Markdown）"
+          },
+          "starterCode": {
+            "type": "string",
+            "description": "默认语言（JS）初始代码模板"
+          },
+          "solutionCode": {
+            "type": "string",
+            "description": "默认语言（JS）参考答案"
+          },
+          "testCases": {
+            "description": "测试用例（至少 1 个）",
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/TestCaseDto"
+            }
+          },
+          "hints": {
+            "description": "解题提示",
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "languageTemplates": {
+            "description": "各语言语法模板（不传则仅支持默认语言）",
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/LanguageTemplateDto"
+            }
+          }
+        },
+        "required": [
+          "id",
+          "title",
+          "difficulty",
+          "description",
+          "starterCode",
+          "solutionCode",
+          "testCases"
+        ]
+      },
+      "PostDto": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "唯一 ID",
+            "example": "react-hooks-study"
+          },
+          "title": {
+            "type": "string",
+            "description": "文章标题"
+          },
+          "summary": {
+            "type": "string",
+            "description": "摘要（列表卡片展示）"
+          },
+          "category": {
+            "type": "string",
+            "description": "分类",
+            "example": "手撕代码"
+          },
+          "date": {
+            "type": "string",
+            "description": "发布时间（YYYY-MM-DD）",
+            "example": "2026-08-10"
+          },
+          "readTime": {
+            "type": "string",
+            "description": "预计阅读时长",
+            "example": "15 分钟"
+          },
+          "tags": {
+            "description": "标签",
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "content": {
+            "type": "string",
+            "description": "正文（Markdown 字符串）"
+          },
+          "type": {
+            "type": "string",
+            "description": "文章类型",
+            "enum": [
+              "article",
+              "quiz",
+              "coding"
+            ]
+          },
+          "quizzes": {
+            "description": "选择题集（type=quiz 时必填）",
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/QuizItemDto"
+            }
+          },
+          "codingChallenge": {
+            "description": "代码沙箱挑战（type=coding 时必填）",
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/CodingChallengeDto"
+              }
+            ]
+          },
+          "coverImage": {
+            "type": "string",
+            "description": "封面图 URL"
+          },
+          "views": {
+            "type": "number",
+            "description": "阅读量（文件初始值 + DB 增量）"
+          },
+          "likes": {
+            "type": "number",
+            "description": "点赞数（文件初始值 + DB 增量）"
+          }
+        },
+        "required": [
+          "id",
+          "title",
+          "summary",
+          "category",
+          "date",
+          "readTime",
+          "tags",
+          "content",
+          "views",
+          "likes"
+        ]
+      },
+      "PostListResultDto": {
+        "type": "object",
+        "properties": {
+          "list": {
+            "description": "当前页数据（列表精简，省略 content/quizzes/codingChallenge）",
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/PostDto"
+            }
+          },
+          "total": {
+            "type": "number",
+            "description": "总条数"
+          },
+          "page": {
+            "type": "number",
+            "description": "当前页码"
+          },
+          "pageSize": {
+            "type": "number",
+            "description": "每页数量"
+          }
+        },
+        "required": [
+          "list",
+          "total",
+          "page",
+          "pageSize"
+        ]
+      },
+      "StatsActionDto": {
+        "type": "object",
+        "properties": {
+          "postId": {
+            "type": "string",
+            "description": "内容 ID（post 或 video 的 id）",
+            "example": "react-hooks-study"
+          }
+        },
+        "required": [
+          "postId"
+        ]
+      },
+      "PostStats": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "number",
+            "description": "统计 ID"
+          },
+          "postId": {
+            "type": "string",
+            "description": "内容 ID（post 或 video）",
+            "example": "react-hooks-study"
+          },
+          "views": {
+            "type": "number",
+            "description": "浏览量累计增量",
+            "default": 0
+          },
+          "likes": {
+            "type": "number",
+            "description": "点赞累计增量",
+            "default": 0
+          }
+        },
+        "required": [
+          "id",
+          "postId",
+          "views",
+          "likes"
+        ]
+      },
+      "VideoDto": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "唯一 ID",
+            "example": "v1"
+          },
+          "title": {
+            "type": "string",
+            "description": "视频标题"
+          },
+          "description": {
+            "type": "string",
+            "description": "简介（卡片展示）"
+          },
+          "category": {
+            "type": "string",
+            "description": "分类",
+            "enum": [
+              "vlog",
+              "tech",
+              "music",
+              "gaming"
+            ]
+          },
+          "videoUrl": {
+            "type": "string",
+            "description": "真实视频文件 URL（mp4/webm/mov 直链）"
+          },
+          "posterUrl": {
+            "type": "string",
+            "description": "视频封面/海报图 URL"
+          },
+          "duration": {
+            "type": "string",
+            "description": "时长（MM:SS 字符串）",
+            "example": "0:15"
+          },
+          "date": {
+            "type": "string",
+            "description": "发布日期（YYYY-MM-DD）",
+            "example": "2026-08-10"
+          },
+          "views": {
+            "type": "number",
+            "description": "播放量（文件初始值 + DB 增量）"
+          }
+        },
+        "required": [
+          "id",
+          "title",
+          "description",
+          "category",
+          "videoUrl",
+          "posterUrl",
+          "duration",
+          "date",
+          "views"
+        ]
+      },
+      "VideoListResultDto": {
+        "type": "object",
+        "properties": {
+          "list": {
+            "description": "当前页数据",
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/VideoDto"
+            }
+          },
+          "total": {
+            "type": "number",
+            "description": "总条数"
+          },
+          "page": {
+            "type": "number",
+            "description": "当前页码"
+          },
+          "pageSize": {
+            "type": "number",
+            "description": "每页数量"
+          }
+        },
+        "required": [
+          "list",
+          "total",
+          "page",
+          "pageSize"
+        ]
+      },
+      "BookPageItemDto": {
+        "type": "object",
+        "properties": {
+          "pageNumber": {
+            "type": "number",
+            "description": "页码，从 1 开始"
+          },
+          "title": {
+            "type": "string",
+            "description": "页面标题"
+          },
+          "chapter": {
+            "type": "string",
+            "description": "章节名"
+          },
+          "type": {
+            "type": "string",
+            "description": "页面类型",
+            "enum": [
+              "cover",
+              "copyright",
+              "content",
+              "illustration",
+              "notes",
+              "back-cover",
+              "pdf-page",
+              "code-page",
+              "epub-section"
+            ]
+          },
+          "content": {
+            "type": "string",
+            "description": "正文（Markdown 字符串）"
+          },
+          "format": {
+            "type": "string",
+            "description": "格式",
+            "example": "markdown"
+          },
+          "image": {
+            "type": "string",
+            "description": "图片 URL"
+          },
+          "pdfPageNumber": {
+            "type": "number",
+            "description": "PDF 影印原页号"
+          },
+          "pdfUrl": {
+            "type": "string",
+            "description": "PDF 页源文件"
+          },
+          "codeLanguage": {
+            "type": "string",
+            "description": "代码页语言"
+          },
+          "codeSnippet": {
+            "type": "string",
+            "description": "代码内容"
+          },
+          "quote": {
+            "type": "string",
+            "description": "引言/金句"
+          }
+        },
+        "required": [
+          "pageNumber",
+          "type"
+        ]
+      },
+      "BookDto": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "唯一 ID",
+            "example": "b-101"
+          },
+          "title": {
+            "type": "string",
+            "description": "书名"
+          },
+          "author": {
+            "type": "string",
+            "description": "作者"
+          },
+          "coverUrl": {
+            "type": "string",
+            "description": "封面图 URL"
+          },
+          "category": {
+            "type": "string",
+            "description": "分类",
+            "example": "计算机"
+          },
+          "rating": {
+            "type": "number",
+            "description": "评分（0–5 整数）"
+          },
+          "status": {
+            "type": "string",
+            "description": "阅读状态",
+            "enum": [
+              "reading",
+              "completed",
+              "want-to-read"
+            ]
+          },
+          "progress": {
+            "type": "number",
+            "description": "阅读进度 0–100"
+          },
+          "summary": {
+            "type": "string",
+            "description": "简介"
+          },
+          "excerpt": {
+            "type": "string",
+            "description": "原文章节节选（Markdown）"
+          },
+          "thoughts": {
+            "type": "string",
+            "description": "深度读书笔记（Markdown）"
+          },
+          "tags": {
+            "description": "标签",
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "publishYear": {
+            "type": "string",
+            "description": "出版年份",
+            "example": "2024"
+          },
+          "pages": {
+            "type": "number",
+            "description": "纸质页数"
+          },
+          "spineColor": {
+            "type": "string",
+            "description": "3D 书脊渐变色（tailwind 类）",
+            "example": "from-amber-600 to-orange-700"
+          },
+          "formats": {
+            "description": "支持格式",
+            "example": [
+              "markdown",
+              "pdf"
+            ],
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "pdfUrl": {
+            "type": "string",
+            "description": "真实 PDF 文件链接"
+          },
+          "epubUrl": {
+            "type": "string",
+            "description": "真实 EPUB 文件链接"
+          },
+          "bookPages": {
+            "description": "阅读器渲染页（不传则前端自动生成 8 页默认结构）",
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/BookPageItemDto"
+            }
+          }
+        },
+        "required": [
+          "id",
+          "title",
+          "author",
+          "coverUrl",
+          "category",
+          "rating",
+          "status",
+          "progress",
+          "summary",
+          "tags"
+        ]
+      },
+      "BookListResultDto": {
+        "type": "object",
+        "properties": {
+          "list": {
+            "description": "当前页数据",
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/BookDto"
+            }
+          },
+          "total": {
+            "type": "number",
+            "description": "总条数"
+          },
+          "page": {
+            "type": "number",
+            "description": "当前页码"
+          },
+          "pageSize": {
+            "type": "number",
+            "description": "每页数量"
+          }
+        },
+        "required": [
+          "list",
+          "total",
+          "page",
+          "pageSize"
+        ]
+      },
+      "ProjectDto": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "唯一 ID",
+            "example": "personal-web"
+          },
+          "title": {
+            "type": "string",
+            "description": "项目名称"
+          },
+          "description": {
+            "type": "string",
+            "description": "项目描述"
+          },
+          "tags": {
+            "description": "标签",
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "githubUrl": {
+            "type": "string",
+            "description": "GitHub 链接"
+          },
+          "icon": {
+            "type": "string",
+            "description": "图标名",
+            "example": "Code"
+          },
+          "stars": {
+            "type": "number",
+            "description": "Star 数"
+          }
+        },
+        "required": [
+          "id",
+          "title",
+          "description",
+          "tags",
+          "stars"
+        ]
+      },
+      "TimelineItemDto": {
+        "type": "object",
+        "properties": {
+          "year": {
+            "type": "string",
+            "description": "年份",
+            "example": "2026"
+          },
+          "title": {
+            "type": "string",
+            "description": "标题",
+            "example": "前端工程师"
+          },
+          "companyOrContext": {
+            "type": "string",
+            "description": "公司/场景",
+            "example": "某公司"
+          },
+          "description": {
+            "type": "string",
+            "description": "描述"
+          },
+          "icon": {
+            "type": "string",
+            "description": "图标名",
+            "example": "Briefcase"
+          }
+        },
+        "required": [
+          "year",
+          "title",
+          "companyOrContext",
+          "description",
+          "icon"
+        ]
+      },
+      "Comment": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "number",
+            "description": "留言 ID"
+          },
+          "author": {
+            "type": "string",
+            "description": "昵称",
+            "example": "小明"
+          },
+          "avatar": {
+            "type": "object",
+            "description": "头像 URL"
+          },
+          "content": {
+            "type": "string",
+            "description": "留言内容"
+          },
+          "date": {
+            "type": "string",
+            "description": "发布日期（YYYY-MM-DD）"
+          },
+          "likes": {
+            "type": "number",
+            "description": "点赞数",
+            "default": 0
+          }
+        },
+        "required": [
+          "id",
+          "author",
+          "content",
+          "date",
+          "likes"
+        ]
+      },
+      "CreateCommentDto": {
+        "type": "object",
+        "properties": {
+          "author": {
+            "type": "string",
+            "description": "昵称",
+            "example": "小明"
+          },
+          "avatar": {
+            "type": "string",
+            "description": "头像 URL"
+          },
+          "content": {
+            "type": "string",
+            "description": "留言内容",
+            "example": "写得很棒，学到了！"
+          }
+        },
+        "required": [
+          "author",
+          "content"
+        ]
+      }
+    }
+  }
+}

@@ -29,7 +29,7 @@ export class BooksService {
   constructor(private readonly reader: ContentReaderService) {}
 
   findAll(query: BooksQueryDto): BookDto[] | PaginatedResult<BookDto> {
-    const books = this.readBooks();
+    const books = this.readBooks(false);
     let filtered = books;
     if (query.status)
       filtered = filtered.filter((b) => b.status === query.status);
@@ -48,12 +48,13 @@ export class BooksService {
   }
 
   findOne(id: string): BookDto {
-    const book = this.readBooks().find((b) => b.id === id);
+    const book = this.readBooks(true).find((b) => b.id === id);
     if (!book) throw new NotFoundException('资源不存在');
     return book;
   }
 
-  private readBooks(): BookDto[] {
+  /** includePages=false 时列表精简，省略 bookPages 大字段 */
+  private readBooks(includePages: boolean): BookDto[] {
     const ids = this.reader.listSubdirIds('books');
     return ids.map((id) => {
       const { data } = this.reader.readMarkdown<BookFrontmatter>(
@@ -87,7 +88,7 @@ export class BooksService {
         const value = fm[key as keyof BookFrontmatter];
         if (value != null) record[key] = value;
       }
-      if (this.reader.exists(`books/${id}/pages.json`)) {
+      if (includePages && this.reader.exists(`books/${id}/pages.json`)) {
         book.bookPages = this.reader.readJson<BookPageItemDto[]>(
           `books/${id}/pages.json`,
         );
