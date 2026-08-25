@@ -66,7 +66,7 @@ useEffect(() => {
 | `pdfUrl` | `string` | 否 | 真实 PDF 文件链接 |
 | `epubUrl` | `string` | 否 | 真实 EPUB 文件链接 |
 | `bookPages` | `BookPageItem[]` | 否 | 阅读器渲染页（不传则自动生成 8 页默认结构） |
-| `toc` | `BookTocItem[]` | 否 | 目录：`[{ pageNumber, title }]`，章节/部分 → 起始页码，用于前端目录导航 |
+| `toc` | `BookTocItem[]` | 否 | 完整分层目录：`[{ pageNumber, title, level }]`（level：1=部分/章，2=节，3=小节，4=四级标题），按 `pageNumber` 可跳转到对应 bookPages，用于前端目录导航 |
 
 ---
 

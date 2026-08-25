@@ -83,6 +83,12 @@ export class BookTocItemDto {
     example: '第 1 章　Java 8、9、10以及11的变化',
   })
   title: string;
+
+  @ApiProperty({
+    description: '层级：1=部分/章，2=节，3=小节，4=四级标题',
+    example: 2,
+  })
+  level: number;
 }
 
 export class BookDto {
