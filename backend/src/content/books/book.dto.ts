@@ -75,7 +75,7 @@ export class BookPageItemDto {
 }
 
 export class BookDto {
-  @ApiProperty({ description: '唯一 ID', example: 'b-101' })
+  @ApiProperty({ description: '唯一 ID', example: 'design-psychology' })
   id: string;
 
   @ApiProperty({ description: '书名' })

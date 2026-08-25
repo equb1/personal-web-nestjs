@@ -34,7 +34,7 @@ export class BooksController {
     summary: '书籍详情',
     description: '返回单个 Book（含 bookPages）',
   })
-  @ApiParam({ name: 'id', description: '书籍 ID', example: 'b-101' })
+  @ApiParam({ name: 'id', description: '书籍 ID', example: 'design-psychology' })
   @ApiOkResponse({
     type: BookDto,
     description: '统一信封 { code:0, message:"ok", data }；data 为 BookDto',
