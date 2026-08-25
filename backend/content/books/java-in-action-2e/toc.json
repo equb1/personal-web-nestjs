@@ -1,2346 +1,2346 @@
 [
  {
-  "pageNumber": 15,
+  "pageNumber": 21,
   "title": "版权信息",
   "level": 1
  },
  {
-  "pageNumber": 16,
+  "pageNumber": 22,
   "title": "版权声明",
   "level": 1
  },
  {
-  "pageNumber": 17,
+  "pageNumber": 23,
   "title": "对本书上一版的赞誉",
   "level": 1
  },
  {
-  "pageNumber": 18,
+  "pageNumber": 24,
   "title": "前言",
   "level": 1
  },
  {
-  "pageNumber": 19,
+  "pageNumber": 26,
   "title": "致谢",
   "level": 1
  },
  {
-  "pageNumber": 19,
+  "pageNumber": 26,
   "title": "乌尔玛的致谢词",
   "level": 3
  },
  {
-  "pageNumber": 19,
+  "pageNumber": 27,
   "title": "富斯科的致谢词",
   "level": 3
  },
  {
-  "pageNumber": 20,
+  "pageNumber": 27,
   "title": "米克罗夫特的致谢词",
   "level": 3
  },
  {
-  "pageNumber": 21,
+  "pageNumber": 28,
   "title": "关于本书",
   "level": 1
  },
  {
-  "pageNumber": 23,
+  "pageNumber": 30,
   "title": "本书结构",
   "level": 2
  },
  {
-  "pageNumber": 26,
+  "pageNumber": 33,
   "title": "关于代码",
   "level": 2
  },
  {
-  "pageNumber": 27,
+  "pageNumber": 34,
   "title": "本书论坛",
   "level": 2
  },
  {
-  "pageNumber": 28,
+  "pageNumber": 35,
   "title": "电子书",
   "level": 2
  },
  {
-  "pageNumber": 29,
+  "pageNumber": 36,
   "title": "关于封面图片",
   "level": 1
  },
  {
-  "pageNumber": 30,
+  "pageNumber": 37,
   "title": "第一部分　基础知识",
   "level": 1
  },
  {
-  "pageNumber": 31,
+  "pageNumber": 38,
   "title": "第 1 章　Java 8、9、10以及11的变化",
   "level": 1
  },
  {
-  "pageNumber": 32,
+  "pageNumber": 39,
   "title": "1.1　为什么要关心Java的变化",
   "level": 2
  },
  {
-  "pageNumber": 35,
+  "pageNumber": 43,
   "title": "1.2　Java怎么还在变",
   "level": 2
  },
  {
-  "pageNumber": 35,
+  "pageNumber": 43,
   "title": "1.2.1　Java在编程语言生态系统中的位置",
   "level": 3
  },
  {
-  "pageNumber": 37,
+  "pageNumber": 46,
   "title": "1.2.2　流处理",
   "level": 3
  },
  {
-  "pageNumber": 39,
+  "pageNumber": 47,
   "title": "1.2.3　用行为参数化把代码传递给方法",
   "level": 3
  },
  {
-  "pageNumber": 40,
+  "pageNumber": 49,
   "title": "1.2.4　并行与共享的可变数据",
   "level": 3
  },
  {
-  "pageNumber": 40,
+  "pageNumber": 49,
   "title": "1.2.5　Java需要演变",
   "level": 3
  },
  {
-  "pageNumber": 42,
+  "pageNumber": 51,
   "title": "1.3　Java中的函数",
   "level": 2
  },
  {
-  "pageNumber": 42,
+  "pageNumber": 52,
   "title": "1.3.1　方法和Lambda作为一等值",
   "level": 3
  },
  {
-  "pageNumber": 44,
+  "pageNumber": 54,
   "title": "Lambda——匿名函数",
   "level": 4
  },
  {
-  "pageNumber": 44,
+  "pageNumber": 54,
   "title": "1.3.2　传递代码：一个例子",
   "level": 3
  },
  {
-  "pageNumber": 48,
+  "pageNumber": 58,
   "title": "1.3.3　从传递方法到Lambda",
   "level": 3
  },
  {
-  "pageNumber": 50,
+  "pageNumber": 61,
   "title": "1.4　流",
   "level": 2
  },
  {
-  "pageNumber": 52,
+  "pageNumber": 64,
   "title": "多线程并非易事",
   "level": 3
  },
  {
-  "pageNumber": 56,
+  "pageNumber": 68,
   "title": "1.5　默认方法及Java模块",
   "level": 2
  },
  {
-  "pageNumber": 58,
+  "pageNumber": 71,
   "title": "1.6　来自函数式编程的其他好思想",
   "level": 2
  },
  {
-  "pageNumber": 61,
+  "pageNumber": 75,
   "title": "1.7　小结",
   "level": 2
  },
  {
-  "pageNumber": 62,
+  "pageNumber": 76,
   "title": "第 2 章　通过行为参数化传递代码",
   "level": 1
  },
  {
-  "pageNumber": 64,
+  "pageNumber": 78,
   "title": "2.1　应对不断变化的需求",
   "level": 2
  },
  {
-  "pageNumber": 64,
+  "pageNumber": 78,
   "title": "2.1.1　初试牛刀：筛选绿苹果",
   "level": 3
  },
  {
-  "pageNumber": 64,
+  "pageNumber": 78,
   "title": "2.1.2　再展身手：把颜色作为参数",
   "level": 3
  },
  {
-  "pageNumber": 66,
+  "pageNumber": 80,
   "title": "2.1.3　第三次尝试：对你能想到的每个属性做筛选",
   "level": 3
  },
  {
-  "pageNumber": 68,
+  "pageNumber": 83,
   "title": "2.2　行为参数化",
   "level": 2
  },
  {
-  "pageNumber": 69,
+  "pageNumber": 84,
   "title": "第四次尝试：根据抽象条件筛选",
   "level": 3
  },
  {
-  "pageNumber": 74,
+  "pageNumber": 90,
   "title": "2.3　对付啰唆",
   "level": 2
  },
  {
-  "pageNumber": 76,
+  "pageNumber": 92,
   "title": "2.3.1　匿名类",
   "level": 3
  },
  {
-  "pageNumber": 76,
+  "pageNumber": 92,
   "title": "2.3.2　第五次尝试：使用匿名类",
   "level": 3
  },
  {
-  "pageNumber": 79,
+  "pageNumber": 95,
   "title": "2.3.3　第六次尝试：使用Lambda表达式",
   "level": 3
  },
  {
-  "pageNumber": 79,
+  "pageNumber": 95,
   "title": "2.3.4　第七次尝试：将List 类型抽象化",
   "level": 3
  },
  {
-  "pageNumber": 81,
+  "pageNumber": 97,
   "title": "2.4　真实的例子",
   "level": 2
  },
  {
-  "pageNumber": 81,
+  "pageNumber": 97,
   "title": "2.4.1　用Comparator 来排序",
   "level": 3
  },
  {
-  "pageNumber": 82,
+  "pageNumber": 98,
   "title": "2.4.2　用Runnable 执行代码块",
   "level": 3
  },
  {
-  "pageNumber": 82,
+  "pageNumber": 99,
   "title": "2.4.3　通过Callable 返回结果",
   "level": 3
  },
  {
-  "pageNumber": 83,
+  "pageNumber": 100,
   "title": "2.4.4　GUI事件处理",
   "level": 3
  },
  {
-  "pageNumber": 85,
+  "pageNumber": 102,
   "title": "2.5　小结",
   "level": 2
  },
  {
-  "pageNumber": 86,
+  "pageNumber": 103,
   "title": "第 3 章　Lambda表达式",
   "level": 1
  },
  {
-  "pageNumber": 87,
+  "pageNumber": 104,
   "title": "3.1　Lambda管中窥豹",
   "level": 2
  },
  {
-  "pageNumber": 92,
+  "pageNumber": 110,
   "title": "3.2　在哪里以及如何使用Lambda",
   "level": 2
  },
  {
-  "pageNumber": 92,
+  "pageNumber": 110,
   "title": "3.2.1　函数式接口",
   "level": 3
  },
  {
-  "pageNumber": 94,
+  "pageNumber": 113,
   "title": "3.2.2　函数描述符",
   "level": 3
  },
  {
-  "pageNumber": 99,
+  "pageNumber": 118,
   "title": "3.3　把Lambda付诸实践：环绕执行模式",
   "level": 2
  },
  {
-  "pageNumber": 99,
+  "pageNumber": 118,
   "title": "3.3.1　第1步：记得行为参数化",
   "level": 3
  },
  {
-  "pageNumber": 100,
+  "pageNumber": 119,
   "title": "3.3.2　第2步：使用函数式接口来传递行为",
   "level": 3
  },
  {
-  "pageNumber": 100,
+  "pageNumber": 120,
   "title": "3.3.3　第3步：执行一个行为",
   "level": 3
  },
  {
-  "pageNumber": 101,
+  "pageNumber": 120,
   "title": "3.3.4　第4步：传递Lambda",
   "level": 3
  },
  {
-  "pageNumber": 102,
+  "pageNumber": 122,
   "title": "3.4　使用函数式接口",
   "level": 2
  },
  {
-  "pageNumber": 102,
+  "pageNumber": 122,
   "title": "3.4.1　Predicate",
   "level": 3
  },
  {
-  "pageNumber": 103,
+  "pageNumber": 123,
   "title": "3.4.2　Consumer",
   "level": 3
  },
  {
-  "pageNumber": 104,
+  "pageNumber": 124,
   "title": "3.4.3　Function",
   "level": 3
  },
  {
-  "pageNumber": 105,
+  "pageNumber": 125,
   "title": "基本类型特化",
   "level": 4
  },
  {
-  "pageNumber": 111,
+  "pageNumber": 134,
   "title": "3.5　类型检查、类型推断以及限制",
   "level": 2
  },
  {
-  "pageNumber": 111,
+  "pageNumber": 134,
   "title": "3.5.1　类型检查",
   "level": 3
  },
  {
-  "pageNumber": 111,
+  "pageNumber": 135,
   "title": "3.5.2　同样的Lambda，不同的函数式接口",
   "level": 3
  },
  {
-  "pageNumber": 115,
+  "pageNumber": 138,
   "title": "3.5.3　类型推断",
   "level": 3
  },
  {
-  "pageNumber": 115,
+  "pageNumber": 138,
   "title": "3.5.4　使用局部变量",
   "level": 3
  },
  {
-  "pageNumber": 118,
+  "pageNumber": 141,
   "title": "3.6　方法引用",
   "level": 2
  },
  {
-  "pageNumber": 118,
+  "pageNumber": 141,
   "title": "3.6.1　管中窥豹",
   "level": 3
  },
  {
-  "pageNumber": 121,
+  "pageNumber": 147,
   "title": "3.6.2　构造函数引用",
   "level": 3
  },
  {
-  "pageNumber": 126,
+  "pageNumber": 152,
   "title": "3.7　Lambda和方法引用实战",
   "level": 2
  },
  {
-  "pageNumber": 126,
+  "pageNumber": 152,
   "title": "3.7.1　第1步：传递代码",
   "level": 3
  },
  {
-  "pageNumber": 126,
+  "pageNumber": 152,
   "title": "3.7.2　第2步：使用匿名类",
   "level": 3
  },
  {
-  "pageNumber": 127,
+  "pageNumber": 153,
   "title": "3.7.3　第3步：使用Lambda表达式",
   "level": 3
  },
  {
-  "pageNumber": 128,
+  "pageNumber": 154,
   "title": "3.7.4　第4步：使用方法引用",
   "level": 3
  },
  {
-  "pageNumber": 129,
+  "pageNumber": 155,
   "title": "3.8　复合Lambda表达式的有用方法",
   "level": 2
  },
  {
-  "pageNumber": 129,
+  "pageNumber": 155,
   "title": "3.8.1　比较器复合",
   "level": 3
  },
  {
-  "pageNumber": 130,
+  "pageNumber": 156,
   "title": "3.8.2　谓词复合",
   "level": 3
  },
  {
-  "pageNumber": 131,
+  "pageNumber": 157,
   "title": "3.8.3　函数复合",
   "level": 3
  },
  {
-  "pageNumber": 134,
+  "pageNumber": 161,
   "title": "3.9　数学中的类似思想",
   "level": 2
  },
  {
-  "pageNumber": 134,
+  "pageNumber": 161,
   "title": "3.9.1　积分",
   "level": 3
  },
  {
-  "pageNumber": 135,
+  "pageNumber": 162,
   "title": "3.9.2　与Java 8的Lambda联系起来",
   "level": 3
  },
  {
-  "pageNumber": 137,
+  "pageNumber": 165,
   "title": "3.10　小结",
   "level": 2
  },
  {
-  "pageNumber": 138,
+  "pageNumber": 166,
   "title": "第二部分　使用流进行函数式数据处理",
   "level": 1
  },
  {
-  "pageNumber": 139,
+  "pageNumber": 167,
   "title": "第 4 章　引入流",
   "level": 1
  },
  {
-  "pageNumber": 140,
+  "pageNumber": 168,
   "title": "4.1　流是什么",
   "level": 2
  },
  {
-  "pageNumber": 145,
+  "pageNumber": 176,
   "title": "4.2　流简介",
   "level": 2
  },
  {
-  "pageNumber": 148,
+  "pageNumber": 180,
   "title": "4.3　流与集合",
   "level": 2
  },
  {
-  "pageNumber": 149,
+  "pageNumber": 181,
   "title": "4.3.1　只能遍历一次",
   "level": 3
  },
  {
-  "pageNumber": 149,
+  "pageNumber": 182,
   "title": "4.3.2　外部迭代与内部迭代",
   "level": 3
  },
  {
-  "pageNumber": 153,
+  "pageNumber": 187,
   "title": "4.4　流操作",
   "level": 2
  },
  {
-  "pageNumber": 153,
+  "pageNumber": 187,
   "title": "4.4.1　中间操作",
   "level": 3
  },
  {
-  "pageNumber": 154,
+  "pageNumber": 189,
   "title": "4.4.2　终端操作",
   "level": 3
  },
  {
-  "pageNumber": 155,
+  "pageNumber": 190,
   "title": "4.4.3　使用流",
   "level": 3
  },
  {
-  "pageNumber": 157,
+  "pageNumber": 192,
   "title": "4.5　路线图",
   "level": 2
  },
  {
-  "pageNumber": 158,
+  "pageNumber": 193,
   "title": "4.6　小结",
   "level": 2
  },
  {
-  "pageNumber": 159,
+  "pageNumber": 194,
   "title": "第 5 章　使用流",
   "level": 1
  },
  {
-  "pageNumber": 160,
+  "pageNumber": 196,
   "title": "5.1　筛选",
   "level": 2
  },
  {
-  "pageNumber": 160,
+  "pageNumber": 196,
   "title": "5.1.1　用谓词筛选",
   "level": 3
  },
  {
-  "pageNumber": 160,
+  "pageNumber": 196,
   "title": "5.1.2　筛选各异的元素",
   "level": 3
  },
  {
-  "pageNumber": 162,
+  "pageNumber": 198,
   "title": "5.2　流的切片",
   "level": 2
  },
  {
-  "pageNumber": 162,
+  "pageNumber": 198,
   "title": "5.2.1　使用谓词对流进行切片",
   "level": 3
  },
  {
-  "pageNumber": 163,
+  "pageNumber": 200,
   "title": "5.2.2　截短流",
   "level": 3
  },
  {
-  "pageNumber": 164,
+  "pageNumber": 201,
   "title": "5.2.3　跳过元素",
   "level": 3
  },
  {
-  "pageNumber": 165,
+  "pageNumber": 202,
   "title": "5.3　映射",
   "level": 2
  },
  {
-  "pageNumber": 165,
+  "pageNumber": 202,
   "title": "5.3.1　对流中每一个元素应用函数",
   "level": 3
  },
  {
-  "pageNumber": 166,
+  "pageNumber": 203,
   "title": "5.3.2　流的扁平化",
   "level": 3
  },
  {
-  "pageNumber": 170,
+  "pageNumber": 208,
   "title": "5.4　查找和匹配",
   "level": 2
  },
  {
-  "pageNumber": 170,
+  "pageNumber": 208,
   "title": "5.4.1　检查谓词是否至少匹配一个元素",
   "level": 3
  },
  {
-  "pageNumber": 170,
+  "pageNumber": 208,
   "title": "5.4.2　检查谓词是否匹配所有元素",
   "level": 3
  },
  {
-  "pageNumber": 170,
+  "pageNumber": 208,
   "title": "noneMatch",
   "level": 4
  },
  {
-  "pageNumber": 171,
+  "pageNumber": 209,
   "title": "5.4.3　查找元素",
   "level": 3
  },
  {
-  "pageNumber": 171,
+  "pageNumber": 210,
   "title": "Optional 简介",
   "level": 4
  },
  {
-  "pageNumber": 172,
+  "pageNumber": 211,
   "title": "5.4.4　查找第一个元素",
   "level": 3
  },
  {
-  "pageNumber": 174,
+  "pageNumber": 212,
   "title": "5.5　归约",
   "level": 2
  },
  {
-  "pageNumber": 174,
+  "pageNumber": 212,
   "title": "5.5.1　元素求和",
   "level": 3
  },
  {
-  "pageNumber": 175,
+  "pageNumber": 214,
   "title": "5.5.2　最大值和最小值",
   "level": 3
  },
  {
-  "pageNumber": 180,
+  "pageNumber": 220,
   "title": "5.6　付诸实践",
   "level": 2
  },
  {
-  "pageNumber": 180,
+  "pageNumber": 220,
   "title": "5.6.1　领域：交易员和交易",
   "level": 3
  },
  {
-  "pageNumber": 181,
+  "pageNumber": 222,
   "title": "5.6.2　解答",
   "level": 3
  },
  {
-  "pageNumber": 186,
+  "pageNumber": 228,
   "title": "5.7　数值流",
   "level": 2
  },
  {
-  "pageNumber": 186,
+  "pageNumber": 228,
   "title": "5.7.1　原始类型流特化",
   "level": 3
  },
  {
-  "pageNumber": 188,
+  "pageNumber": 231,
   "title": "5.7.2　数值范围",
   "level": 3
  },
  {
-  "pageNumber": 189,
+  "pageNumber": 232,
   "title": "5.7.3　数值流应用：勾股数",
   "level": 3
  },
  {
-  "pageNumber": 195,
+  "pageNumber": 239,
   "title": "5.8　构建流",
   "level": 2
  },
  {
-  "pageNumber": 195,
+  "pageNumber": 239,
   "title": "5.8.1　由值创建流",
   "level": 3
  },
  {
-  "pageNumber": 195,
+  "pageNumber": 239,
   "title": "5.8.2　由可空对象创建流",
   "level": 3
  },
  {
-  "pageNumber": 196,
+  "pageNumber": 240,
   "title": "5.8.3　由数组创建流",
   "level": 3
  },
  {
-  "pageNumber": 196,
+  "pageNumber": 240,
   "title": "5.8.4　由文件生成流",
   "level": 3
  },
  {
-  "pageNumber": 197,
+  "pageNumber": 242,
   "title": "5.8.5　由函数生成流：创建无限流",
   "level": 3
  },
  {
-  "pageNumber": 204,
+  "pageNumber": 250,
   "title": "5.9　概述",
   "level": 2
  },
  {
-  "pageNumber": 205,
+  "pageNumber": 251,
   "title": "5.10　小结",
   "level": 2
  },
  {
-  "pageNumber": 206,
+  "pageNumber": 253,
   "title": "第 6 章　用流收集数据",
   "level": 1
  },
  {
-  "pageNumber": 209,
+  "pageNumber": 257,
   "title": "6.1　收集器简介",
   "level": 2
  },
  {
-  "pageNumber": 209,
+  "pageNumber": 257,
   "title": "6.1.1　收集器用作高级归约",
   "level": 3
  },
  {
-  "pageNumber": 210,
+  "pageNumber": 258,
   "title": "6.1.2　预定义收集器",
   "level": 3
  },
  {
-  "pageNumber": 211,
+  "pageNumber": 260,
   "title": "6.2　归约和汇总",
   "level": 2
  },
  {
-  "pageNumber": 211,
+  "pageNumber": 260,
   "title": "6.2.1　查找流中的最大值和最小值",
   "level": 3
  },
  {
-  "pageNumber": 212,
+  "pageNumber": 261,
   "title": "6.2.2　汇总",
   "level": 3
  },
  {
-  "pageNumber": 213,
+  "pageNumber": 263,
   "title": "6.2.3　连接字符串",
   "level": 3
  },
  {
-  "pageNumber": 214,
+  "pageNumber": 264,
   "title": "6.2.4　广义的归约汇总",
   "level": 3
  },
  {
-  "pageNumber": 221,
+  "pageNumber": 272,
   "title": "6.3　分组",
   "level": 2
  },
  {
-  "pageNumber": 222,
+  "pageNumber": 273,
   "title": "6.3.1　操作分组的元素",
   "level": 3
  },
  {
-  "pageNumber": 225,
+  "pageNumber": 278,
   "title": "6.3.2　多级分组",
   "level": 3
  },
  {
-  "pageNumber": 227,
+  "pageNumber": 281,
   "title": "6.3.3　按子组收集数据",
   "level": 3
  },
  {
-  "pageNumber": 233,
+  "pageNumber": 288,
   "title": "6.4　分区",
   "level": 2
  },
  {
-  "pageNumber": 233,
+  "pageNumber": 288,
   "title": "6.4.1　分区的优势",
   "level": 3
  },
  {
-  "pageNumber": 235,
+  "pageNumber": 292,
   "title": "6.4.2　将数字按质数和非质数分区",
   "level": 3
  },
  {
-  "pageNumber": 240,
+  "pageNumber": 297,
   "title": "6.5　收集器接口",
   "level": 2
  },
  {
-  "pageNumber": 241,
+  "pageNumber": 298,
   "title": "6.5.1　理解Collector 接口声明的方法",
   "level": 3
  },
  {
-  "pageNumber": 244,
+  "pageNumber": 302,
   "title": "6.5.2　全部融合到一起",
   "level": 3
  },
  {
-  "pageNumber": 248,
+  "pageNumber": 306,
   "title": "6.6　开发你自己的收集器以获得更好的性能",
   "level": 2
  },
  {
-  "pageNumber": 248,
+  "pageNumber": 306,
   "title": "6.6.1　仅用质数做除数",
   "level": 3
  },
  {
-  "pageNumber": 256,
+  "pageNumber": 315,
   "title": "6.6.2　比较收集器的性能",
   "level": 3
  },
  {
-  "pageNumber": 259,
+  "pageNumber": 319,
   "title": "6.7　小结",
   "level": 2
  },
  {
-  "pageNumber": 260,
+  "pageNumber": 320,
   "title": "第 7 章　并行数据处理与性能",
   "level": 1
  },
  {
-  "pageNumber": 261,
+  "pageNumber": 321,
   "title": "7.1　并行流",
   "level": 2
  },
  {
-  "pageNumber": 261,
+  "pageNumber": 322,
   "title": "7.1.1　将顺序流转换为并行流",
   "level": 3
  },
  {
-  "pageNumber": 263,
+  "pageNumber": 324,
   "title": "7.1.2　测量流性能",
   "level": 3
  },
  {
-  "pageNumber": 270,
+  "pageNumber": 332,
   "title": "7.1.3　正确使用并行流",
   "level": 3
  },
  {
-  "pageNumber": 272,
+  "pageNumber": 334,
   "title": "7.1.4　高效使用并行流",
   "level": 3
  },
  {
-  "pageNumber": 275,
+  "pageNumber": 338,
   "title": "7.2　分支/合并框架",
   "level": 2
  },
  {
-  "pageNumber": 275,
+  "pageNumber": 338,
   "title": "7.2.1　使用RecursiveTask",
   "level": 3
  },
  {
-  "pageNumber": 278,
+  "pageNumber": 343,
   "title": "7.2.2　使用分支/合并框架的最佳做法",
   "level": 3
  },
  {
-  "pageNumber": 279,
+  "pageNumber": 345,
   "title": "7.2.3　工作窃取",
   "level": 3
  },
  {
-  "pageNumber": 282,
+  "pageNumber": 347,
   "title": "7.3　Spliterator",
   "level": 2
  },
  {
-  "pageNumber": 282,
+  "pageNumber": 348,
   "title": "7.3.1　拆分过程",
   "level": 3
  },
  {
-  "pageNumber": 284,
+  "pageNumber": 349,
   "title": "7.3.2　实现你自己的Spliterator",
   "level": 3
  },
  {
-  "pageNumber": 293,
+  "pageNumber": 361,
   "title": "7.4　小结",
   "level": 2
  },
  {
-  "pageNumber": 294,
+  "pageNumber": 362,
   "title": "第三部分　使用流和Lambda进行高效编程",
   "level": 1
  },
  {
-  "pageNumber": 295,
+  "pageNumber": 363,
   "title": "第 8 章　Collection API的增强功能",
   "level": 1
  },
  {
-  "pageNumber": 296,
+  "pageNumber": 364,
   "title": "8.1　集合工厂",
   "level": 2
  },
  {
-  "pageNumber": 297,
+  "pageNumber": 365,
   "title": "8.1.1　List 工厂",
   "level": 3
  },
  {
-  "pageNumber": 298,
+  "pageNumber": 367,
   "title": "8.1.2　Set 工厂",
   "level": 3
  },
  {
-  "pageNumber": 299,
+  "pageNumber": 368,
   "title": "8.1.3　Map 工厂",
   "level": 3
  },
  {
-  "pageNumber": 301,
+  "pageNumber": 371,
   "title": "8.2　使用List 和Set",
   "level": 2
  },
  {
-  "pageNumber": 301,
+  "pageNumber": 371,
   "title": "8.2.1　removeIf 方法",
   "level": 3
  },
  {
-  "pageNumber": 303,
+  "pageNumber": 373,
   "title": "8.2.2　replaceAll 方法",
   "level": 3
  },
  {
-  "pageNumber": 305,
+  "pageNumber": 375,
   "title": "8.3　使用Map",
   "level": 2
  },
  {
-  "pageNumber": 305,
+  "pageNumber": 375,
   "title": "8.3.1　forEach 方法",
   "level": 3
  },
  {
-  "pageNumber": 305,
+  "pageNumber": 375,
   "title": "8.3.2　排序",
   "level": 3
  },
  {
-  "pageNumber": 306,
+  "pageNumber": 377,
   "title": "8.3.3　getOrDefault 方法",
   "level": 3
  },
  {
-  "pageNumber": 307,
+  "pageNumber": 377,
   "title": "8.3.4　计算模式",
   "level": 3
  },
  {
-  "pageNumber": 309,
+  "pageNumber": 380,
   "title": "8.3.5　删除模式",
   "level": 3
  },
  {
-  "pageNumber": 310,
+  "pageNumber": 381,
   "title": "8.3.6　替换模式",
   "level": 3
  },
  {
-  "pageNumber": 311,
+  "pageNumber": 382,
   "title": "8.3.7　merge 方法",
   "level": 3
  },
  {
-  "pageNumber": 314,
+  "pageNumber": 387,
   "title": "8.4　改进的ConcurrentHashMap",
   "level": 2
  },
  {
-  "pageNumber": 314,
+  "pageNumber": 387,
   "title": "8.4.1　归约和搜索",
   "level": 3
  },
  {
-  "pageNumber": 315,
+  "pageNumber": 388,
   "title": "8.4.2　计数",
   "level": 3
  },
  {
-  "pageNumber": 315,
+  "pageNumber": 388,
   "title": "8.4.3　Set 视图",
   "level": 3
  },
  {
-  "pageNumber": 316,
+  "pageNumber": 390,
   "title": "8.5　小结",
   "level": 2
  },
  {
-  "pageNumber": 317,
+  "pageNumber": 391,
   "title": "第 9 章　重构、测试和调试",
   "level": 1
  },
  {
-  "pageNumber": 318,
+  "pageNumber": 392,
   "title": "9.1　为改善可读性和灵活性重构代码",
   "level": 2
  },
  {
-  "pageNumber": 318,
+  "pageNumber": 392,
   "title": "9.1.1　改善代码的可读性",
   "level": 3
  },
  {
-  "pageNumber": 318,
+  "pageNumber": 392,
   "title": "9.1.2　从匿名类到Lambda表达式的转换",
   "level": 3
  },
  {
-  "pageNumber": 320,
+  "pageNumber": 395,
   "title": "9.1.3　从Lambda表达式到方法引用的转换",
   "level": 3
  },
  {
-  "pageNumber": 322,
+  "pageNumber": 398,
   "title": "9.1.4　从命令式的数据处理切换到Stream",
   "level": 3
  },
  {
-  "pageNumber": 323,
+  "pageNumber": 399,
   "title": "9.1.5　增加代码的灵活性",
   "level": 3
  },
  {
-  "pageNumber": 327,
+  "pageNumber": 404,
   "title": "9.2　使用Lambda重构面向对象的设计模式",
   "level": 2
  },
  {
-  "pageNumber": 327,
+  "pageNumber": 404,
   "title": "9.2.1　策略模式",
   "level": 3
  },
  {
-  "pageNumber": 330,
+  "pageNumber": 408,
   "title": "9.2.2　模板方法",
   "level": 3
  },
  {
-  "pageNumber": 331,
+  "pageNumber": 410,
   "title": "9.2.3　观察者模式",
   "level": 3
  },
  {
-  "pageNumber": 334,
+  "pageNumber": 414,
   "title": "9.2.4　责任链模式",
   "level": 3
  },
  {
-  "pageNumber": 337,
+  "pageNumber": 417,
   "title": "9.2.5　工厂模式",
   "level": 3
  },
  {
-  "pageNumber": 340,
+  "pageNumber": 421,
   "title": "9.3　测试Lambda表达式",
   "level": 2
  },
  {
-  "pageNumber": 340,
+  "pageNumber": 421,
   "title": "9.3.1　测试可见Lambda函数的行为",
   "level": 3
  },
  {
-  "pageNumber": 341,
+  "pageNumber": 422,
   "title": "9.3.2　测试使用Lambda的方法的行为",
   "level": 3
  },
  {
-  "pageNumber": 342,
+  "pageNumber": 424,
   "title": "9.3.3　将复杂的Lambda表达式分为不同的方法",
   "level": 3
  },
  {
-  "pageNumber": 342,
+  "pageNumber": 424,
   "title": "9.3.4　高阶函数的测试",
   "level": 3
  },
  {
-  "pageNumber": 344,
+  "pageNumber": 426,
   "title": "9.4　调试",
   "level": 2
  },
  {
-  "pageNumber": 344,
+  "pageNumber": 426,
   "title": "9.4.1　查看栈跟踪",
   "level": 3
  },
  {
-  "pageNumber": 347,
+  "pageNumber": 429,
   "title": "9.4.2　使用日志调试",
   "level": 3
  },
  {
-  "pageNumber": 349,
+  "pageNumber": 432,
   "title": "9.5　小结",
   "level": 2
  },
  {
-  "pageNumber": 350,
+  "pageNumber": 433,
   "title": "第 10 章　基于Lambda的领域特定语言",
   "level": 1
  },
  {
-  "pageNumber": 353,
+  "pageNumber": 437,
   "title": "10.1　领域特定语言",
   "level": 2
  },
  {
-  "pageNumber": 353,
+  "pageNumber": 437,
   "title": "10.1.1　DSL的优点和弊端",
   "level": 3
  },
  {
-  "pageNumber": 355,
+  "pageNumber": 439,
   "title": "10.1.2　JVM中已提供的DSL解决方案",
   "level": 3
  },
  {
-  "pageNumber": 361,
+  "pageNumber": 447,
   "title": "10.2　现代Java API中的小型DSL",
   "level": 2
  },
  {
-  "pageNumber": 362,
+  "pageNumber": 449,
   "title": "10.2.1　把Stream API当成DSL去操作集合",
   "level": 3
  },
  {
-  "pageNumber": 364,
+  "pageNumber": 451,
   "title": "10.2.2　将Collectors 作为DSL汇总数据",
   "level": 3
  },
  {
-  "pageNumber": 369,
+  "pageNumber": 456,
   "title": "10.3　使用Java创建DSL的模式与技巧",
   "level": 2
  },
  {
-  "pageNumber": 372,
+  "pageNumber": 459,
   "title": "10.3.1　方法链接",
   "level": 3
  },
  {
-  "pageNumber": 377,
+  "pageNumber": 465,
   "title": "10.3.2　使用嵌套函数",
   "level": 3
  },
  {
-  "pageNumber": 380,
+  "pageNumber": 467,
   "title": "10.3.3　使用Lambda表达式的函数序列",
   "level": 3
  },
  {
-  "pageNumber": 384,
+  "pageNumber": 471,
   "title": "10.3.4　把它们都放到一起",
   "level": 3
  },
  {
-  "pageNumber": 387,
+  "pageNumber": 476,
   "title": "10.3.5　在DSL中使用方法引用",
   "level": 3
  },
  {
-  "pageNumber": 392,
+  "pageNumber": 481,
   "title": "10.4　Java 8 DSL的实际应用",
   "level": 2
  },
  {
-  "pageNumber": 392,
+  "pageNumber": 481,
   "title": "10.4.1　jOOQ",
   "level": 3
  },
  {
-  "pageNumber": 394,
+  "pageNumber": 484,
   "title": "10.4.2　Cucumber",
   "level": 3
  },
  {
-  "pageNumber": 396,
+  "pageNumber": 487,
   "title": "10.4.3　Spring Integration",
   "level": 3
  },
  {
-  "pageNumber": 400,
+  "pageNumber": 491,
   "title": "10.5　小结",
   "level": 2
  },
  {
-  "pageNumber": 401,
+  "pageNumber": 493,
   "title": "第四部分　无所不在的Java",
   "level": 1
  },
  {
-  "pageNumber": 402,
+  "pageNumber": 494,
   "title": "第 11 章　用Optional\n 取代null",
   "level": 1
  },
  {
-  "pageNumber": 404,
+  "pageNumber": 496,
   "title": "11.1　如何为缺失的值建模",
   "level": 2
  },
  {
-  "pageNumber": 404,
+  "pageNumber": 497,
   "title": "11.1.1　采用防御式检查减少NullPointerException",
   "level": 3
  },
  {
-  "pageNumber": 406,
+  "pageNumber": 499,
   "title": "11.1.2　null 带来的种种问题",
   "level": 3
  },
  {
-  "pageNumber": 407,
+  "pageNumber": 500,
   "title": "11.1.3　其他语言中null 的替代品",
   "level": 3
  },
  {
-  "pageNumber": 410,
+  "pageNumber": 503,
   "title": "11.2　Optional 类入门",
   "level": 2
  },
  {
-  "pageNumber": 413,
+  "pageNumber": 506,
   "title": "11.3　应用Optional 的几种模式",
   "level": 2
  },
  {
-  "pageNumber": 413,
+  "pageNumber": 506,
   "title": "11.3.1　创建Optional 对象",
   "level": 3
  },
  {
-  "pageNumber": 414,
+  "pageNumber": 507,
   "title": "11.3.2　使用map 从Optional 对象中提取和转换值",
   "level": 3
  },
  {
-  "pageNumber": 415,
+  "pageNumber": 508,
   "title": "11.3.3　使用flatMap 链接Optional 对象",
   "level": 3
  },
  {
-  "pageNumber": 420,
+  "pageNumber": 515,
   "title": "11.3.4　操纵由Optional 对象构成的Stream",
   "level": 3
  },
  {
-  "pageNumber": 424,
+  "pageNumber": 519,
   "title": "11.3.5　默认行为及解引用Optional 对象",
   "level": 3
  },
  {
-  "pageNumber": 426,
+  "pageNumber": 521,
   "title": "11.3.6　两个Optional 对象的组合",
   "level": 3
  },
  {
-  "pageNumber": 428,
+  "pageNumber": 524,
   "title": "11.3.7　使用filter 剔除特定的值",
   "level": 3
  },
  {
-  "pageNumber": 432,
+  "pageNumber": 529,
   "title": "11.4　使用Optional 的实战示例",
   "level": 2
  },
  {
-  "pageNumber": 432,
+  "pageNumber": 529,
   "title": "11.4.1　用Optional 封装可能为null 的值",
   "level": 3
  },
  {
-  "pageNumber": 432,
+  "pageNumber": 530,
   "title": "11.4.2　异常与Optional 的对比",
   "level": 3
  },
  {
-  "pageNumber": 433,
+  "pageNumber": 531,
   "title": "11.4.3　基础类型的Optional 对象，以及为什么应该避免使用它们",
   "level": 3
  },
  {
-  "pageNumber": 434,
+  "pageNumber": 532,
   "title": "11.4.4　把所有内容整合起来",
   "level": 3
  },
  {
-  "pageNumber": 437,
+  "pageNumber": 537,
   "title": "11.5　小结",
   "level": 2
  },
  {
-  "pageNumber": 438,
+  "pageNumber": 538,
   "title": "第 12 章　新的日期和时间API",
   "level": 1
  },
  {
-  "pageNumber": 440,
+  "pageNumber": 540,
   "title": "12.1　LocalDate 、LocalTime 、LocalDateTime 、Instant 、Duration 以及Period",
   "level": 2
  },
  {
-  "pageNumber": 440,
+  "pageNumber": 540,
   "title": "12.1.1　使用LocalDate 和LocalTime",
   "level": 3
  },
  {
-  "pageNumber": 442,
+  "pageNumber": 543,
   "title": "12.1.2　合并日期和时间",
   "level": 3
  },
  {
-  "pageNumber": 443,
+  "pageNumber": 544,
   "title": "12.1.3　机器的日期和时间格式",
   "level": 3
  },
  {
-  "pageNumber": 444,
+  "pageNumber": 546,
   "title": "12.1.4　定义Duration 或Period",
   "level": 3
  },
  {
-  "pageNumber": 447,
+  "pageNumber": 550,
   "title": "12.2　操纵、解析和格式化日期",
   "level": 2
  },
  {
-  "pageNumber": 449,
+  "pageNumber": 554,
   "title": "12.2.1　使用TemporalAdjuster",
   "level": 3
  },
  {
-  "pageNumber": 453,
+  "pageNumber": 558,
   "title": "12.2.2　打印输出及解析日期–时间对象",
   "level": 3
  },
  {
-  "pageNumber": 456,
+  "pageNumber": 562,
   "title": "12.3　处理不同的时区和历法",
   "level": 2
  },
  {
-  "pageNumber": 456,
+  "pageNumber": 562,
   "title": "12.3.1　使用时区",
   "level": 3
  },
  {
-  "pageNumber": 457,
+  "pageNumber": 564,
   "title": "12.3.2　利用和UTC/格林尼治时间的固定偏差计算时区",
   "level": 3
  },
  {
-  "pageNumber": 458,
+  "pageNumber": 565,
   "title": "12.3.3　使用别的日历系统",
   "level": 3
  },
  {
-  "pageNumber": 461,
+  "pageNumber": 568,
   "title": "12.4　小结",
   "level": 2
  },
  {
-  "pageNumber": 462,
+  "pageNumber": 569,
   "title": "第 13 章　默认方法",
   "level": 1
  },
  {
-  "pageNumber": 465,
+  "pageNumber": 573,
   "title": "13.1　不断演进的API",
   "level": 2
  },
  {
-  "pageNumber": 465,
+  "pageNumber": 573,
   "title": "13.1.1　初始版本的API",
   "level": 3
  },
  {
-  "pageNumber": 466,
+  "pageNumber": 575,
   "title": "13.1.2　第二版API",
   "level": 3
  },
  {
-  "pageNumber": 469,
+  "pageNumber": 580,
   "title": "13.2　概述默认方法",
   "level": 2
  },
  {
-  "pageNumber": 472,
+  "pageNumber": 583,
   "title": "13.3　默认方法的使用模式",
   "level": 2
  },
  {
-  "pageNumber": 472,
+  "pageNumber": 583,
   "title": "13.3.1　可选方法",
   "level": 3
  },
  {
-  "pageNumber": 472,
+  "pageNumber": 583,
   "title": "13.3.2　行为的多继承",
   "level": 3
  },
  {
-  "pageNumber": 477,
+  "pageNumber": 590,
   "title": "13.4　解决冲突的规则",
   "level": 2
  },
  {
-  "pageNumber": 477,
+  "pageNumber": 590,
   "title": "13.4.1　解决问题的三条规则",
   "level": 3
  },
  {
-  "pageNumber": 478,
+  "pageNumber": 591,
   "title": "13.4.2　选择提供了最具体实现的默认方法的接口",
   "level": 3
  },
  {
-  "pageNumber": 479,
+  "pageNumber": 593,
   "title": "13.4.3　冲突及如何显式地消除歧义",
   "level": 3
  },
  {
-  "pageNumber": 481,
+  "pageNumber": 595,
   "title": "13.4.4　菱形继承问题",
   "level": 3
  },
  {
-  "pageNumber": 484,
+  "pageNumber": 598,
   "title": "13.5　小结",
   "level": 2
  },
  {
-  "pageNumber": 485,
+  "pageNumber": 599,
   "title": "第 14 章　Java模块系统",
   "level": 1
  },
  {
-  "pageNumber": 486,
+  "pageNumber": 600,
   "title": "14.1　模块化的驱动力：软件的推理",
   "level": 2
  },
  {
-  "pageNumber": 486,
+  "pageNumber": 600,
   "title": "14.1.1　关注点分离",
   "level": 3
  },
  {
-  "pageNumber": 486,
+  "pageNumber": 600,
   "title": "14.1.2　信息隐藏",
   "level": 3
  },
  {
-  "pageNumber": 487,
+  "pageNumber": 601,
   "title": "14.1.3　Java软件",
   "level": 3
  },
  {
-  "pageNumber": 489,
+  "pageNumber": 603,
   "title": "14.2　为什么要设计Java模块系统",
   "level": 2
  },
  {
-  "pageNumber": 489,
+  "pageNumber": 603,
   "title": "14.2.1　模块化的局限性",
   "level": 3
  },
  {
-  "pageNumber": 490,
+  "pageNumber": 605,
   "title": "14.2.2　单体型的JDK",
   "level": 3
  },
  {
-  "pageNumber": 491,
+  "pageNumber": 606,
   "title": "14.2.3　与OSGi的比较",
   "level": 3
  },
  {
-  "pageNumber": 494,
+  "pageNumber": 609,
   "title": "14.3　Java模块：全局视图",
   "level": 2
  },
  {
-  "pageNumber": 496,
+  "pageNumber": 611,
   "title": "14.4　使用Java模块系统开发应用",
   "level": 2
  },
  {
-  "pageNumber": 496,
+  "pageNumber": 611,
   "title": "14.4.1　从头开始搭建一个应用",
   "level": 3
  },
  {
-  "pageNumber": 497,
+  "pageNumber": 613,
   "title": "14.4.2　细粒度和粗粒度的模块化",
   "level": 3
  },
  {
-  "pageNumber": 498,
+  "pageNumber": 613,
   "title": "14.4.3　Java模块系统基础",
   "level": 3
  },
  {
-  "pageNumber": 501,
+  "pageNumber": 617,
   "title": "14.5　使用多个模块",
   "level": 2
  },
  {
-  "pageNumber": 501,
+  "pageNumber": 617,
   "title": "14.5.1　exports 子句",
   "level": 3
  },
  {
-  "pageNumber": 502,
+  "pageNumber": 618,
   "title": "14.5.2　requires 子句",
   "level": 3
  },
  {
-  "pageNumber": 503,
+  "pageNumber": 620,
   "title": "14.5.3　命名",
   "level": 3
  },
  {
-  "pageNumber": 504,
+  "pageNumber": 621,
   "title": "14.6　编译及打包",
   "level": 2
  },
  {
-  "pageNumber": 511,
+  "pageNumber": 629,
   "title": "14.7　自动模块",
   "level": 2
  },
  {
-  "pageNumber": 513,
+  "pageNumber": 632,
   "title": "14.8　模块声明及子句",
   "level": 2
  },
  {
-  "pageNumber": 513,
+  "pageNumber": 632,
   "title": "14.8.1　requires",
   "level": 3
  },
  {
-  "pageNumber": 513,
+  "pageNumber": 632,
   "title": "14.8.2　exports",
   "level": 3
  },
  {
-  "pageNumber": 514,
+  "pageNumber": 633,
   "title": "14.8.3　requires 的传递",
   "level": 3
  },
  {
-  "pageNumber": 514,
+  "pageNumber": 634,
   "title": "14.8.4　exports to",
   "level": 3
  },
  {
-  "pageNumber": 515,
+  "pageNumber": 635,
   "title": "14.8.5　open 和opens",
   "level": 3
  },
  {
-  "pageNumber": 515,
+  "pageNumber": 636,
   "title": "14.8.6　uses 和provides",
   "level": 3
  },
  {
-  "pageNumber": 517,
+  "pageNumber": 637,
   "title": "14.9　通过一个更复杂的例子了解更多",
   "level": 2
  },
  {
-  "pageNumber": 519,
+  "pageNumber": 639,
   "title": "14.10　小结",
   "level": 2
  },
  {
-  "pageNumber": 520,
+  "pageNumber": 640,
   "title": "第五部分　提升Java的并发性",
   "level": 1
  },
  {
-  "pageNumber": 521,
+  "pageNumber": 641,
   "title": "第 15 章　CompletableFuture\n 及反应式编程背后的概念",
   "level": 1
  },
  {
-  "pageNumber": 524,
+  "pageNumber": 645,
   "title": "15.1　为支持并发而不断演进的Java",
   "level": 2
  },
  {
-  "pageNumber": 525,
+  "pageNumber": 646,
   "title": "15.1.1　线程以及更高层的抽象",
   "level": 3
  },
  {
-  "pageNumber": 526,
+  "pageNumber": 648,
   "title": "15.1.2　执行器和线程池",
   "level": 3
  },
  {
-  "pageNumber": 529,
+  "pageNumber": 651,
   "title": "15.1.3　其他的线程抽象：非嵌套方法调用",
   "level": 3
  },
  {
-  "pageNumber": 530,
+  "pageNumber": 653,
   "title": "15.1.4　你希望线程为你带来什么",
   "level": 3
  },
  {
-  "pageNumber": 531,
+  "pageNumber": 654,
   "title": "15.2　同步及异步API",
   "level": 2
  },
  {
-  "pageNumber": 534,
+  "pageNumber": 658,
   "title": "15.2.1　Future 风格的API",
   "level": 3
  },
  {
-  "pageNumber": 534,
+  "pageNumber": 659,
   "title": "15.2.2　反应式风格的API",
   "level": 3
  },
  {
-  "pageNumber": 536,
+  "pageNumber": 661,
   "title": "15.2.3　有害的睡眠及其他阻塞式操作",
   "level": 3
  },
  {
-  "pageNumber": 538,
+  "pageNumber": 664,
   "title": "15.2.4　实战验证",
   "level": 3
  },
  {
-  "pageNumber": 539,
+  "pageNumber": 665,
   "title": "15.2.5　如何使用异步API进行异常处理",
   "level": 3
  },
  {
-  "pageNumber": 541,
+  "pageNumber": 668,
   "title": "15.3　“线框–管道”模型",
   "level": 2
  },
  {
-  "pageNumber": 544,
+  "pageNumber": 671,
   "title": "15.4　为并发而生的CompletableFuture 和结合器",
   "level": 2
  },
  {
-  "pageNumber": 549,
+  "pageNumber": 678,
   "title": "15.5　“发布–订阅”以及反应式编程",
   "level": 2
  },
  {
-  "pageNumber": 550,
+  "pageNumber": 679,
   "title": "15.5.1　示例：对两个流求和",
   "level": 3
  },
  {
-  "pageNumber": 556,
+  "pageNumber": 686,
   "title": "15.5.2　背压",
   "level": 3
  },
  {
-  "pageNumber": 557,
+  "pageNumber": 687,
   "title": "15.5.3　一种简单的真实背压",
   "level": 3
  },
  {
-  "pageNumber": 559,
+  "pageNumber": 689,
   "title": "15.6　反应式系统和反应式编程",
   "level": 2
  },
  {
-  "pageNumber": 560,
+  "pageNumber": 690,
   "title": "15.7　路线图",
   "level": 2
  },
  {
-  "pageNumber": 561,
+  "pageNumber": 691,
   "title": "15.8　小结",
   "level": 2
  },
  {
-  "pageNumber": 562,
+  "pageNumber": 692,
   "title": "第 16 章　CompletableFuture\n ：组合式异步编程",
   "level": 1
  },
  {
-  "pageNumber": 563,
+  "pageNumber": 693,
   "title": "16.1　Future 接口",
   "level": 2
  },
  {
-  "pageNumber": 565,
+  "pageNumber": 695,
   "title": "16.1.1　Future 接口的局限性",
   "level": 3
  },
  {
-  "pageNumber": 565,
+  "pageNumber": 696,
   "title": "16.1.2　使用CompletableFuture 构建异步应用",
   "level": 3
  },
  {
-  "pageNumber": 567,
+  "pageNumber": 699,
   "title": "16.2　实现异步API",
   "level": 2
  },
  {
-  "pageNumber": 568,
+  "pageNumber": 700,
   "title": "16.2.1　将同步方法转换为异步方法",
   "level": 3
  },
  {
-  "pageNumber": 571,
+  "pageNumber": 704,
   "title": "16.2.2　错误处理",
   "level": 3
  },
  {
-  "pageNumber": 577,
+  "pageNumber": 710,
   "title": "16.3　让你的代码免受阻塞之苦",
   "level": 2
  },
  {
-  "pageNumber": 578,
+  "pageNumber": 712,
   "title": "16.3.1　使用并行流对请求进行并行操作",
   "level": 3
  },
  {
-  "pageNumber": 579,
+  "pageNumber": 713,
   "title": "16.3.2　使用CompletableFuture 发起异步请求",
   "level": 3
  },
  {
-  "pageNumber": 582,
+  "pageNumber": 717,
   "title": "16.3.3　寻找更好的方案",
   "level": 3
  },
  {
-  "pageNumber": 583,
+  "pageNumber": 719,
   "title": "16.3.4　使用定制的执行器",
   "level": 3
  },
  {
-  "pageNumber": 587,
+  "pageNumber": 724,
   "title": "16.4　对多个异步任务进行流水线操作",
   "level": 2
  },
  {
-  "pageNumber": 588,
+  "pageNumber": 725,
   "title": "16.4.1　实现折扣服务",
   "level": 3
  },
  {
-  "pageNumber": 590,
+  "pageNumber": 727,
   "title": "16.4.2　使用Discount 服务",
   "level": 3
  },
  {
-  "pageNumber": 592,
+  "pageNumber": 729,
   "title": "16.4.3　构造同步和异步操作",
   "level": 3
  },
  {
-  "pageNumber": 596,
+  "pageNumber": 734,
   "title": "16.4.4　将两个CompletableFuture 对象整合起来，无论它们是否存在依赖",
   "level": 3
  },
  {
-  "pageNumber": 598,
+  "pageNumber": 736,
   "title": "16.4.5　对Future 和CompletableFuture 的回顾",
   "level": 3
  },
  {
-  "pageNumber": 599,
+  "pageNumber": 739,
   "title": "16.4.6　高效地使用超时机制",
   "level": 3
  },
  {
-  "pageNumber": 603,
+  "pageNumber": 743,
   "title": "16.5　响应CompletableFuture 的completion 事件",
   "level": 2
  },
  {
-  "pageNumber": 603,
+  "pageNumber": 743,
   "title": "16.5.1　对最佳价格查询器应用的优化",
   "level": 3
  },
  {
-  "pageNumber": 606,
+  "pageNumber": 747,
   "title": "16.5.2　付诸实践",
   "level": 3
  },
  {
-  "pageNumber": 608,
+  "pageNumber": 750,
   "title": "16.6　路线图",
   "level": 2
  },
  {
-  "pageNumber": 609,
+  "pageNumber": 751,
   "title": "16.7　小结",
   "level": 2
  },
  {
-  "pageNumber": 610,
+  "pageNumber": 752,
   "title": "第 17 章　反应式编程",
   "level": 1
  },
  {
-  "pageNumber": 611,
+  "pageNumber": 754,
   "title": "17.1　反应式宣言",
   "level": 2
  },
  {
-  "pageNumber": 611,
+  "pageNumber": 755,
   "title": "17.1.1　应用层的反应式编程",
   "level": 3
  },
  {
-  "pageNumber": 613,
+  "pageNumber": 756,
   "title": "17.1.2　反应式系统",
   "level": 3
  },
  {
-  "pageNumber": 615,
+  "pageNumber": 759,
   "title": "17.2　反应式流以及Flow API",
   "level": 2
  },
  {
-  "pageNumber": 615,
+  "pageNumber": 760,
   "title": "17.2.1　Flow 类",
   "level": 3
  },
  {
-  "pageNumber": 619,
+  "pageNumber": 765,
   "title": "17.2.2　创建你的第一个反应式应用",
   "level": 3
  },
  {
-  "pageNumber": 628,
+  "pageNumber": 777,
   "title": "17.2.3　使用Processor 转换数据",
   "level": 3
  },
  {
-  "pageNumber": 631,
+  "pageNumber": 781,
   "title": "17.2.4　为什么Java并未提供Flow API的实现",
   "level": 3
  },
  {
-  "pageNumber": 633,
+  "pageNumber": 783,
   "title": "17.3　使用反应式库RxJava",
   "level": 2
  },
  {
-  "pageNumber": 634,
+  "pageNumber": 784,
   "title": "17.3.1　创建和使用Observable",
   "level": 3
  },
  {
-  "pageNumber": 642,
+  "pageNumber": 793,
   "title": "17.3.2　转换及整合多个Observable",
   "level": 3
  },
  {
-  "pageNumber": 648,
+  "pageNumber": 800,
   "title": "17.4　小结",
   "level": 2
  },
  {
-  "pageNumber": 649,
+  "pageNumber": 801,
   "title": "第六部分　函数式编程以及Java未来的演进",
   "level": 1
  },
  {
-  "pageNumber": 650,
+  "pageNumber": 802,
   "title": "第 18 章　函数式的思考",
   "level": 1
  },
  {
-  "pageNumber": 651,
+  "pageNumber": 803,
   "title": "18.1　实现和维护系统",
   "level": 2
  },
  {
-  "pageNumber": 651,
+  "pageNumber": 803,
   "title": "18.1.1　共享的可变数据",
   "level": 3
  },
  {
-  "pageNumber": 652,
+  "pageNumber": 805,
   "title": "18.1.2　声明式编程",
   "level": 3
  },
  {
-  "pageNumber": 653,
+  "pageNumber": 806,
   "title": "18.1.3　为什么要采用函数式编程",
   "level": 3
  },
  {
-  "pageNumber": 655,
+  "pageNumber": 808,
   "title": "18.2　什么是函数式编程",
   "level": 2
  },
  {
-  "pageNumber": 655,
+  "pageNumber": 809,
   "title": "18.2.1　函数式Java编程",
   "level": 3
  },
  {
-  "pageNumber": 658,
+  "pageNumber": 812,
   "title": "18.2.2　引用透明性",
   "level": 3
  },
  {
-  "pageNumber": 658,
+  "pageNumber": 814,
   "title": "18.2.3　面向对象的编程和函数式编程的对比",
   "level": 3
  },
  {
-  "pageNumber": 659,
+  "pageNumber": 814,
   "title": "18.2.4　函数式编程实战",
   "level": 3
  },
  {
-  "pageNumber": 664,
+  "pageNumber": 821,
   "title": "18.3　递归和迭代",
   "level": 2
  },
  {
-  "pageNumber": 668,
+  "pageNumber": 826,
   "title": "18.4　小结",
   "level": 2
  },
  {
-  "pageNumber": 669,
+  "pageNumber": 827,
   "title": "第 19 章　函数式编程的技巧",
   "level": 1
  },
  {
-  "pageNumber": 670,
+  "pageNumber": 828,
   "title": "19.1　无处不在的函数",
   "level": 2
  },
  {
-  "pageNumber": 670,
+  "pageNumber": 828,
   "title": "19.1.1　高阶函数",
   "level": 3
  },
  {
-  "pageNumber": 672,
+  "pageNumber": 831,
   "title": "19.1.2　柯里化",
   "level": 3
  },
  {
-  "pageNumber": 675,
+  "pageNumber": 834,
   "title": "19.2　持久化数据结构",
   "level": 2
  },
  {
-  "pageNumber": 675,
+  "pageNumber": 834,
   "title": "19.2.1　破坏式更新和函数式更新的比较",
   "level": 3
  },
  {
-  "pageNumber": 677,
+  "pageNumber": 838,
   "title": "19.2.2　另一个使用Tree 的例子",
   "level": 3
  },
  {
-  "pageNumber": 679,
+  "pageNumber": 839,
   "title": "19.2.3　采用函数式的方法",
   "level": 3
  },
  {
-  "pageNumber": 683,
+  "pageNumber": 844,
   "title": "19.3　Stream的延迟计算",
   "level": 2
  },
  {
-  "pageNumber": 683,
+  "pageNumber": 844,
   "title": "19.3.1　自定义的Stream",
   "level": 3
  },
  {
-  "pageNumber": 686,
+  "pageNumber": 849,
   "title": "19.3.2　创建你自己的延迟列表",
   "level": 3
  },
  {
-  "pageNumber": 695,
+  "pageNumber": 859,
   "title": "19.4　模式匹配",
   "level": 2
  },
  {
-  "pageNumber": 695,
+  "pageNumber": 860,
   "title": "19.4.1　访问者模式",
   "level": 3
  },
  {
-  "pageNumber": 696,
+  "pageNumber": 861,
   "title": "19.4.2　用模式匹配力挽狂澜",
   "level": 3
  },
  {
-  "pageNumber": 703,
+  "pageNumber": 869,
   "title": "19.5　杂项",
   "level": 2
  },
  {
-  "pageNumber": 703,
+  "pageNumber": 869,
   "title": "19.5.1　缓存或记忆表",
   "level": 3
  },
  {
-  "pageNumber": 705,
+  "pageNumber": 871,
   "title": "19.5.2　“返回同样的对象”意味着什么",
   "level": 3
  },
  {
-  "pageNumber": 706,
+  "pageNumber": 872,
   "title": "19.5.3　结合器",
   "level": 3
  },
  {
-  "pageNumber": 708,
+  "pageNumber": 876,
   "title": "19.6　小结",
   "level": 2
  },
  {
-  "pageNumber": 709,
+  "pageNumber": 877,
   "title": "第 20 章　面向对象和函数式编程的混合：Java和Scala的比较",
   "level": 1
  },
  {
-  "pageNumber": 710,
+  "pageNumber": 879,
   "title": "20.1　Scala简介",
   "level": 2
  },
  {
-  "pageNumber": 710,
+  "pageNumber": 879,
   "title": "20.1.1　你好，啤酒",
   "level": 3
  },
  {
-  "pageNumber": 713,
+  "pageNumber": 882,
   "title": "20.1.2　基础数据结构：List 、Set 、Map 、Tuple 、Stream 以及Option",
   "level": 3
  },
  {
-  "pageNumber": 722,
+  "pageNumber": 894,
   "title": "20.2　函数",
   "level": 2
  },
  {
-  "pageNumber": 722,
+  "pageNumber": 894,
   "title": "20.2.1　Scala中的一等函数",
   "level": 3
  },
  {
-  "pageNumber": 723,
+  "pageNumber": 896,
   "title": "20.2.2　匿名函数和闭包",
   "level": 3
  },
  {
-  "pageNumber": 725,
+  "pageNumber": 899,
   "title": "20.2.3　柯里化",
   "level": 3
  },
  {
-  "pageNumber": 728,
+  "pageNumber": 902,
   "title": "20.3　类和trait",
   "level": 2
  },
  {
-  "pageNumber": 728,
+  "pageNumber": 902,
   "title": "20.3.1　更加简洁的Scala类",
   "level": 3
  },
  {
-  "pageNumber": 729,
+  "pageNumber": 904,
   "title": "20.3.2　Scala的trait与Java 8的接口对比",
   "level": 3
  },
  {
-  "pageNumber": 731,
+  "pageNumber": 906,
   "title": "20.4　小结",
   "level": 2
  },
  {
-  "pageNumber": 732,
+  "pageNumber": 907,
   "title": "第 21 章　结论以及Java的未来",
   "level": 1
  },
  {
-  "pageNumber": 733,
+  "pageNumber": 908,
   "title": "21.1　回顾Java 8的语言特性",
   "level": 2
  },
  {
-  "pageNumber": 733,
+  "pageNumber": 909,
   "title": "21.1.1　行为参数化（Lambda以及方法引用）",
   "level": 3
  },
  {
-  "pageNumber": 734,
+  "pageNumber": 909,
   "title": "21.1.2　流",
   "level": 3
  },
  {
-  "pageNumber": 735,
+  "pageNumber": 910,
   "title": "21.1.3　CompletableFuture",
   "level": 3
  },
  {
-  "pageNumber": 735,
+  "pageNumber": 911,
   "title": "21.1.4　Optional",
   "level": 3
  },
  {
-  "pageNumber": 736,
+  "pageNumber": 912,
   "title": "21.1.5　Flow API",
   "level": 3
  },
  {
-  "pageNumber": 736,
+  "pageNumber": 913,
   "title": "21.1.6　默认方法",
   "level": 3
  },
  {
-  "pageNumber": 738,
+  "pageNumber": 914,
   "title": "21.2　Java 9的模块系统",
   "level": 2
  },
  {
-  "pageNumber": 740,
+  "pageNumber": 917,
   "title": "21.3　Java 10的局部变量类型推断",
   "level": 2
  },
  {
-  "pageNumber": 742,
+  "pageNumber": 919,
   "title": "21.4　Java的未来",
   "level": 2
  },
  {
-  "pageNumber": 742,
+  "pageNumber": 919,
   "title": "21.4.1　声明处型变",
   "level": 3
  },
  {
-  "pageNumber": 742,
+  "pageNumber": 920,
   "title": "21.4.2　模式匹配",
   "level": 3
  },
  {
-  "pageNumber": 744,
+  "pageNumber": 922,
   "title": "21.4.3　更加丰富的泛型形式",
   "level": 3
  },
  {
-  "pageNumber": 747,
+  "pageNumber": 926,
   "title": "21.4.4　对不变性的更深层支持",
   "level": 3
  },
  {
-  "pageNumber": 748,
+  "pageNumber": 928,
   "title": "21.4.5　值类型",
   "level": 3
  },
  {
-  "pageNumber": 753,
+  "pageNumber": 934,
   "title": "21.5　让Java发展得更快",
   "level": 2
  },
  {
-  "pageNumber": 754,
+  "pageNumber": 936,
   "title": "21.6　写在最后的话",
   "level": 2
  },
  {
-  "pageNumber": 755,
+  "pageNumber": 937,
   "title": "附录 A　其他语言特性的更新",
   "level": 1
  },
  {
-  "pageNumber": 756,
+  "pageNumber": 938,
   "title": "A.1　注解",
   "level": 2
  },
  {
-  "pageNumber": 756,
+  "pageNumber": 938,
   "title": "A.1.1　重复注解",
   "level": 3
  },
  {
-  "pageNumber": 758,
+  "pageNumber": 941,
   "title": "A.1.2　类型注解",
   "level": 3
  },
  {
-  "pageNumber": 760,
+  "pageNumber": 943,
   "title": "A.2　通用目标类型推断",
   "level": 2
  },
  {
-  "pageNumber": 761,
+  "pageNumber": 945,
   "title": "附录 B　其他类库的更新",
   "level": 1
  },
  {
-  "pageNumber": 762,
+  "pageNumber": 946,
   "title": "B.1　集合",
   "level": 2
  },
  {
-  "pageNumber": 762,
+  "pageNumber": 946,
   "title": "B.1.1　其他新增的方法",
   "level": 3
  },
  {
-  "pageNumber": 764,
+  "pageNumber": 949,
   "title": "B.1.2　Collections 类",
   "level": 3
  },
  {
-  "pageNumber": 764,
+  "pageNumber": 949,
   "title": "B.1.3　Comparator",
   "level": 3
  },
  {
-  "pageNumber": 766,
+  "pageNumber": 951,
   "title": "B.2　并发",
   "level": 2
  },
  {
-  "pageNumber": 766,
+  "pageNumber": 951,
   "title": "B.2.1　原子操作",
   "level": 3
  },
  {
-  "pageNumber": 767,
+  "pageNumber": 952,
   "title": "B.2.2　ConcurrentHashMap",
   "level": 3
  },
  {
-  "pageNumber": 770,
+  "pageNumber": 956,
   "title": "B.3　Arrays",
   "level": 2
  },
  {
-  "pageNumber": 770,
+  "pageNumber": 956,
   "title": "B.3.1　使用parallelSort",
   "level": 3
  },
  {
-  "pageNumber": 770,
+  "pageNumber": 956,
   "title": "B.3.2　使用setAll 和parallelSetAll",
   "level": 3
  },
  {
-  "pageNumber": 770,
+  "pageNumber": 956,
   "title": "B.3.3　使用parallelPrefix",
   "level": 3
  },
  {
-  "pageNumber": 771,
+  "pageNumber": 958,
   "title": "B.4　Number 和Math",
   "level": 2
  },
  {
-  "pageNumber": 771,
+  "pageNumber": 958,
   "title": "B.4.1　Number",
   "level": 3
  },
  {
-  "pageNumber": 771,
+  "pageNumber": 959,
   "title": "B.4.2　Math",
   "level": 3
  },
  {
-  "pageNumber": 773,
+  "pageNumber": 961,
   "title": "B.5　Files",
   "level": 2
  },
  {
-  "pageNumber": 774,
+  "pageNumber": 962,
   "title": "B.6　Reflection",
   "level": 2
  },
  {
-  "pageNumber": 775,
+  "pageNumber": 963,
   "title": "B.7　String",
   "level": 2
  },
  {
-  "pageNumber": 776,
+  "pageNumber": 964,
   "title": "附录 C　如何以并发方式在同一个流上执行多种操作",
   "level": 1
  },
  {
-  "pageNumber": 777,
+  "pageNumber": 965,
   "title": "C.1　复制流",
   "level": 2
  },
  {
-  "pageNumber": 778,
+  "pageNumber": 966,
   "title": "C.1.1　使用ForkingStreamConsumer 实现Results 接口",
   "level": 3
  },
  {
-  "pageNumber": 781,
+  "pageNumber": 971,
   "title": "C.1.2　开发ForkingStreamConsumer 和BlockingQueueSpliterator",
   "level": 3
  },
  {
-  "pageNumber": 786,
+  "pageNumber": 976,
   "title": "C.1.3　将StreamForker 运用于实战",
   "level": 3
  },
  {
-  "pageNumber": 790,
+  "pageNumber": 979,
   "title": "C.2　性能的考量",
   "level": 2
  },
  {
-  "pageNumber": 791,
+  "pageNumber": 980,
   "title": "附录 D　Lambda表达式和JVM字节码",
   "level": 1
  },
  {
-  "pageNumber": 792,
+  "pageNumber": 981,
   "title": "D.1　匿名类",
   "level": 2
  },
  {
-  "pageNumber": 793,
+  "pageNumber": 982,
   "title": "D.2　生成字节码",
   "level": 2
  },
  {
-  "pageNumber": 795,
+  "pageNumber": 985,
   "title": "D.3　用InvokeDynamic 力挽狂澜",
   "level": 2
  },
  {
-  "pageNumber": 797,
+  "pageNumber": 988,
   "title": "D.4　代码生成策略",
   "level": 2
  },
  {
-  "pageNumber": 799,
+  "pageNumber": 990,
   "title": "看完了",
   "level": 1
  }
