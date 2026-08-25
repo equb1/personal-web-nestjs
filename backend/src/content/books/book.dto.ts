@@ -74,6 +74,17 @@ export class BookPageItemDto {
   quote?: string;
 }
 
+export class BookTocItemDto {
+  @ApiProperty({ description: '该章节在 bookPages 中的起始页码' })
+  pageNumber: number;
+
+  @ApiProperty({
+    description: '章节/部分标题',
+    example: '第 1 章　Java 8、9、10以及11的变化',
+  })
+  title: string;
+}
+
 export class BookDto {
   @ApiProperty({ description: '唯一 ID', example: 'design-psychology' })
   id: string;
@@ -160,6 +171,13 @@ export class BookDto {
   })
   @IsOptional()
   bookPages?: BookPageItemDto[];
+
+  @ApiPropertyOptional({
+    description: '目录（章节 → 起始页码），可用于前端导航',
+    type: [BookTocItemDto],
+  })
+  @IsOptional()
+  toc?: BookTocItemDto[];
 }
 
 export class BooksQueryDto extends PaginationQueryDto {

@@ -1102,6 +1102,24 @@
           "type"
         ]
       },
+      "BookTocItemDto": {
+        "type": "object",
+        "properties": {
+          "pageNumber": {
+            "type": "number",
+            "description": "该章节在 bookPages 中的起始页码"
+          },
+          "title": {
+            "type": "string",
+            "description": "章节/部分标题",
+            "example": "第 1 章　Java 8、9、10以及11的变化"
+          }
+        },
+        "required": [
+          "pageNumber",
+          "title"
+        ]
+      },
       "BookDto": {
         "type": "object",
         "properties": {
@@ -1201,6 +1219,13 @@
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/BookPageItemDto"
+            }
+          },
+          "toc": {
+            "description": "目录（章节 → 起始页码），可用于前端导航",
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/BookTocItemDto"
             }
           }
         },

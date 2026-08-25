@@ -1,7 +1,12 @@
 import { Injectable, NotFoundException } from '@nestjs/common';
 import { paginate, PaginatedResult } from '../../common/dto/pagination.dto';
 import { ContentReaderService } from '../content-reader.service';
-import { BookDto, BookPageItemDto, BooksQueryDto } from './book.dto';
+import {
+  BookDto,
+  BookPageItemDto,
+  BookTocItemDto,
+  BooksQueryDto,
+} from './book.dto';
 
 interface BookFrontmatter {
   id: string;
@@ -91,6 +96,11 @@ export class BooksService {
       if (includePages && this.reader.exists(`books/${id}/pages.json`)) {
         book.bookPages = this.reader.readJson<BookPageItemDto[]>(
           `books/${id}/pages.json`,
+        );
+      }
+      if (includePages && this.reader.exists(`books/${id}/toc.json`)) {
+        book.toc = this.reader.readJson<BookTocItemDto[]>(
+          `books/${id}/toc.json`,
         );
       }
       return book;

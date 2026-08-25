@@ -1,0 +1,158 @@
+[
+ {
+  "pageNumber": 3,
+  "title": "版权信息"
+ },
+ {
+  "pageNumber": 4,
+  "title": "版权声明"
+ },
+ {
+  "pageNumber": 5,
+  "title": "对本书上一版的赞誉"
+ },
+ {
+  "pageNumber": 6,
+  "title": "前言"
+ },
+ {
+  "pageNumber": 7,
+  "title": "致谢"
+ },
+ {
+  "pageNumber": 9,
+  "title": "关于本书"
+ },
+ {
+  "pageNumber": 14,
+  "title": "关于封面图片"
+ },
+ {
+  "pageNumber": 15,
+  "title": "第一部分　基础知识"
+ },
+ {
+  "pageNumber": 16,
+  "title": "第 1 章　Java 8、9、10以及11的变化"
+ },
+ {
+  "pageNumber": 44,
+  "title": "第 2 章　通过行为参数化传递代码"
+ },
+ {
+  "pageNumber": 63,
+  "title": "第 3 章　Lambda表达式"
+ },
+ {
+  "pageNumber": 110,
+  "title": "第二部分　使用流进行函数式数据处理"
+ },
+ {
+  "pageNumber": 111,
+  "title": "第 4 章　引入流"
+ },
+ {
+  "pageNumber": 129,
+  "title": "第 5 章　使用流"
+ },
+ {
+  "pageNumber": 171,
+  "title": "第 6 章　用流收集数据"
+ },
+ {
+  "pageNumber": 223,
+  "title": "第 7 章　并行数据处理与性能"
+ },
+ {
+  "pageNumber": 256,
+  "title": "第三部分　使用流和Lambda进行高效编程"
+ },
+ {
+  "pageNumber": 257,
+  "title": "第 8 章　Collection API的增强功能"
+ },
+ {
+  "pageNumber": 277,
+  "title": "第 9 章　重构、测试和调试"
+ },
+ {
+  "pageNumber": 307,
+  "title": "第 10 章　基于Lambda的领域特定语言"
+ },
+ {
+  "pageNumber": 356,
+  "title": "第四部分　无所不在的Java"
+ },
+ {
+  "pageNumber": 357,
+  "title": "第 11 章　用Optional\n 取代null"
+ },
+ {
+  "pageNumber": 391,
+  "title": "第 12 章　新的日期和时间API"
+ },
+ {
+  "pageNumber": 415,
+  "title": "第 13 章　默认方法"
+ },
+ {
+  "pageNumber": 437,
+  "title": "第 14 章　Java模块系统"
+ },
+ {
+  "pageNumber": 466,
+  "title": "第五部分　提升Java的并发性"
+ },
+ {
+  "pageNumber": 467,
+  "title": "第 15 章　CompletableFuture\n 及反应式编程背后的概念"
+ },
+ {
+  "pageNumber": 505,
+  "title": "第 16 章　CompletableFuture\n ：组合式异步编程"
+ },
+ {
+  "pageNumber": 549,
+  "title": "第 17 章　反应式编程"
+ },
+ {
+  "pageNumber": 587,
+  "title": "第六部分　函数式编程以及Java未来的演进"
+ },
+ {
+  "pageNumber": 588,
+  "title": "第 18 章　函数式的思考"
+ },
+ {
+  "pageNumber": 605,
+  "title": "第 19 章　函数式编程的技巧"
+ },
+ {
+  "pageNumber": 641,
+  "title": "第 20 章　面向对象和函数式编程的混合：Java和Scala的比较"
+ },
+ {
+  "pageNumber": 661,
+  "title": "第 21 章　结论以及Java的未来"
+ },
+ {
+  "pageNumber": 682,
+  "title": "附录 A　其他语言特性的更新"
+ },
+ {
+  "pageNumber": 687,
+  "title": "附录 B　其他类库的更新"
+ },
+ {
+  "pageNumber": 698,
+  "title": "附录 C　如何以并发方式在同一个流上执行多种操作"
+ },
+ {
+  "pageNumber": 710,
+  "title": "附录 D　Lambda表达式和JVM字节码"
+ },
+ {
+  "pageNumber": 716,
+  "title": "看完了"
+ }
+]
