@@ -378,7 +378,7 @@
             "in": "path",
             "description": "书籍 ID",
             "schema": {
-              "example": "b-101",
+              "example": "design-psychology",
               "type": "string"
             }
           }
@@ -1108,7 +1108,7 @@
           "id": {
             "type": "string",
             "description": "唯一 ID",
-            "example": "b-101"
+            "example": "design-psychology"
           },
           "title": {
             "type": "string",
