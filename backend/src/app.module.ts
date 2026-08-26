@@ -6,6 +6,7 @@ import { join } from 'path';
 import { Comment } from './comments/comment.entity';
 import { CommentsModule } from './comments/comments.module';
 import { BooksModule } from './content/books/books.module';
+import { BookProgress } from './content/books/book-progress.entity';
 import { PostsModule } from './content/posts/posts.module';
 import { ProjectsModule } from './content/projects/projects.module';
 import { TimelineModule } from './content/timeline/timeline.module';
@@ -23,7 +24,7 @@ import { StatsModule } from './stats/stats.module';
     TypeOrmModule.forRoot({
       type: 'better-sqlite3',
       database: join(process.cwd(), process.env.DB_PATH ?? 'data/app.db'),
-      entities: [Comment, PostStats],
+      entities: [Comment, PostStats, BookProgress],
       synchronize: true,
     }),
     PostsModule,

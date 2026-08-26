@@ -119,6 +119,14 @@ export class BookDto {
   @IsNumber()
   progress: number;
 
+  @ApiPropertyOptional({
+    description: '最近阅读的 bookPages 页码（断点续读，来自 DB 实时进度）',
+    example: 38,
+  })
+  @IsOptional()
+  @IsInt()
+  lastPage?: number;
+
   @ApiProperty({ description: '简介' })
   summary: string;
 

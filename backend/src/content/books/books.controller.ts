@@ -1,13 +1,24 @@
-import { Controller, Get, Param, Query } from '@nestjs/common';
 import {
+  Body,
+  Controller,
+  Get,
+  HttpCode,
+  Param,
+  Post,
+  Query,
+} from '@nestjs/common';
+import {
+  ApiBody,
   ApiOkResponse,
   ApiOperation,
   ApiParam,
   ApiTags,
 } from '@nestjs/swagger';
 import { PaginatedResult } from '../../common/dto/pagination.dto';
+import { BookProgress } from './book-progress.entity';
 import { BookDto, BookListResultDto, BooksQueryDto } from './book.dto';
 import { BooksService } from './books.service';
+import { UpdateBookProgressDto } from './update-book-progress.dto';
 
 @ApiTags('books')
 @Controller('books')
@@ -25,7 +36,9 @@ export class BooksController {
     description:
       '统一信封 { code:0, message:"ok", data }；data 为 BookListResultDto（分页时）或 BookDto[]（未分页时）',
   })
-  findAll(@Query() query: BooksQueryDto): BookDto[] | PaginatedResult<BookDto> {
+  findAll(
+    @Query() query: BooksQueryDto,
+  ): Promise<BookDto[] | PaginatedResult<BookDto>> {
     return this.booksService.findAll(query);
   }
 
@@ -43,7 +56,32 @@ export class BooksController {
     type: BookDto,
     description: '统一信封 { code:0, message:"ok", data }；data 为 BookDto',
   })
-  findOne(@Param('id') id: string): BookDto {
+  findOne(@Param('id') id: string): Promise<BookDto> {
     return this.booksService.findOne(id);
+  }
+
+  @Post(':id/progress')
+  @HttpCode(200)
+  @ApiOperation({
+    summary: '上报阅读进度',
+    description:
+      '前端翻页/离开阅读器时上报，后端 upsert 到 SQLite；列表/详情接口返回时用 DB 实时值覆盖文件 frontmatter 的初始 progress。',
+  })
+  @ApiParam({
+    name: 'id',
+    description: '书籍 ID',
+    example: 'java-in-action-2e',
+  })
+  @ApiBody({ type: UpdateBookProgressDto })
+  @ApiOkResponse({
+    type: BookProgress,
+    description:
+      '统一信封 { code:0, message:"ok", data }；data 为保存后的 BookProgress',
+  })
+  updateProgress(
+    @Param('id') id: string,
+    @Body() dto: UpdateBookProgressDto,
+  ): Promise<BookProgress> {
+    return this.booksService.updateProgress(id, dto);
   }
 }
